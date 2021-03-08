@@ -32,9 +32,9 @@ namespace Microsoft.Extensions.DependencyInjection
                     Description = "Some description goes here",
                     Contact = new OpenApiContact()
                     {
-                        Name = "Carlos Decloedt Jr",
-                        Email = "carlos@decloedtjr.com.br",
-                        Url = new Uri("http://www.decloedtjr.com.br")
+                        Name = "John",
+                        Email = "john@iti.itau",
+                        Url = new Uri("https://iti.itau")
                     }
                 });
 

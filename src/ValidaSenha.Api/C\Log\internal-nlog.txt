@@ -1,407 +1,407 @@
-2021-03-04 21:37:40.6143 Info Message Template Auto Format enabled
-2021-03-04 21:37:40.6398 Info Loading assembly: NLog.Targets.ElasticSearch
-2021-03-04 21:37:40.6417 Debug ScanAssembly('NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a')
-2021-03-04 21:37:40.6434 Info Loading assembly: NLog.Web.AspNetCore
-2021-03-04 21:37:40.6447 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 21:37:40.6530 Debug Setting 'BufferingTargetWrapper.name' to 'ElasticSearch'
-2021-03-04 21:37:40.6621 Debug Setting 'BufferingTargetWrapper.flushTimeout' to '5000'
-2021-03-04 21:37:40.6767 Debug Setting 'DateLayoutRenderer.format' to 'yyyy.MM.dd'
-2021-03-04 21:37:40.6803 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.6834 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 21:37:40.6859 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.6878 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 21:37:40.6903 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 21:37:40.6920 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 21:37:40.6934 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.6945 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:40.6955 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.6968 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 21:37:40.7004 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 21:37:40.7027 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:40.7051 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:40.7081 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:40.7108 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7132 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 21:37:40.7155 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7177 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 21:37:40.7210 Debug Registered target ElasticSearch: NLog.Targets.ElasticSearch.ElasticSearchTarget
-2021-03-04 21:37:40.7240 Info Adding target BufferingTargetWrapper(Name=ElasticSearch)
-2021-03-04 21:37:40.7258 Debug Registered target ElasticSearch: NLog.Targets.Wrappers.BufferingTargetWrapper
-2021-03-04 21:37:40.7279 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7295 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 21:37:40.7318 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 21:37:40.7343 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 21:37:40.7368 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7394 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:40.7419 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7441 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 21:37:40.7458 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 21:37:40.7483 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:40.7504 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:40.7522 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:40.7540 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7559 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 21:37:40.7575 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7601 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 21:37:40.7631 Debug Setting 'ConsoleTarget.name' to 'console'
-2021-03-04 21:37:40.7656 Debug Setting 'ConsoleTarget.layout' to '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 21:37:40.7675 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7694 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 21:37:40.7712 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 21:37:40.7729 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 21:37:40.7746 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7764 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:40.7788 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7807 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 21:37:40.7824 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 21:37:40.7847 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:40.7871 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:40.7894 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:40.7916 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.7935 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 21:37:40.8038 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.8065 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 21:37:40.8091 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 21:37:40.8121 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.8149 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 21:37:40.8176 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 21:37:40.8199 Trace Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 21:37:40.8226 Trace  Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 21:37:40.8256 Info Adding target ConsoleTarget(Name=console)
-2021-03-04 21:37:40.8273 Debug Registered target console: NLog.Targets.ConsoleTarget
-2021-03-04 21:37:40.8298 Trace ParseRulesElement
-2021-03-04 21:37:40.8396 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
-2021-03-04 21:37:40.8463 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
-2021-03-04 21:37:40.8787 Debug Watching path '/Users/albardo/hiring/itilab-master/src/ValidaSenha.Api/bin/Debug/netcoreapp3.1' filter 'nlog.config' for changes.
-2021-03-04 21:37:40.8815 Debug --- NLog configuration dump ---
-2021-03-04 21:37:40.8835 Debug Targets:
-2021-03-04 21:37:40.8858 Debug BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 21:37:40.8886 Debug Console Target[console]
-2021-03-04 21:37:40.8910 Debug Rules:
-2021-03-04 21:37:40.8941 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ElasticSearch console ]
-2021-03-04 21:37:40.8965 Debug --- End of NLog configuration dump ---
-2021-03-04 21:37:40.9019 Trace FindReachableObject<System.Object>:
-2021-03-04 21:37:40.9041 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ElasticSearch console ]'
-2021-03-04 21:37:40.9066 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
-2021-03-04 21:37:40.9093 Trace  Scanning BufferingTargetWrapper 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'
-2021-03-04 21:37:40.9118 Trace   Scanning Property WrappedTarget 'ElasticSearch Target[ElasticSearch]' NLog.Targets
-2021-03-04 21:37:40.9142 Trace   Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 21:37:40.9164 Trace    Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 21:37:40.9187 Trace    Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 21:37:40.9208 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:40.9225 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:40.9252 Trace     Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 21:37:40.9279 Trace    Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 21:37:40.9307 Trace    Scanning SimpleLayout ''logevent''
-2021-03-04 21:37:40.9326 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:40.9342 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:40.9364 Trace    Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 21:37:40.9457 Trace    Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 21:37:40.9482 Trace    Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 21:37:40.9532 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:40.9555 Trace     Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 21:37:40.9579 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:40.9602 Trace     Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 21:37:40.9621 Trace      Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 21:37:40.9649 Trace      Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:40.9668 Trace       Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:40.9688 Trace       Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:40.9705 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:40.9731 Trace     Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 21:37:40.9758 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:40.9784 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 21:37:40.9808 Trace  Scanning ConsoleTarget 'Console Target[console]'
-2021-03-04 21:37:40.9829 Trace   Scanning Property Layout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'' NLog.Layouts
-2021-03-04 21:37:40.9849 Trace   Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 21:37:40.9869 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:40.9888 Trace    Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 21:37:40.9909 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:40.9926 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 21:37:40.9949 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 21:37:40.9971 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:41.0000 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.0028 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:41.0053 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.0077 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 21:37:41.0100 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.0127 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 21:37:41.0154 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 21:37:41.0180 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.0204 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 21:37:41.0221 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.0248 Trace    Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 21:37:41.0271 Trace     Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 21:37:41.0319 Trace   Scanning Property Encoding 'System.Text.ConsoleEncoding' System.Text
-2021-03-04 21:37:41.0341 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
-2021-03-04 21:37:41.0369 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
-2021-03-04 21:37:41.0395 Info Found 33 configuration items
-2021-03-04 21:37:41.0430 Trace Initializing Layout Renderer: ${all-event-properties}
-2021-03-04 21:37:41.0455 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.0480 Trace Initializing Layout Renderer: ${logger}
-2021-03-04 21:37:41.0507 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.0536 Trace Initializing Layout Renderer: ${exception}
-2021-03-04 21:37:41.0560 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.0583 Trace Initializing Layout Renderer: ${message}
-2021-03-04 21:37:41.0600 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.0620 Trace Initializing Layout Renderer: ${level}
-2021-03-04 21:37:41.0642 Trace Initializing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 21:37:41.0674 Trace FindReachableObject<System.Object>:
-2021-03-04 21:37:41.0692 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:41.0710 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.0727 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:41.0764 Trace Initializing Layout Renderer: ${uppercase}
-2021-03-04 21:37:41.0786 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.0806 Trace Initializing Layout Renderer: ${date}
-2021-03-04 21:37:41.0822 Trace Initializing '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 21:37:41.0840 Trace FindReachableObject<System.Object>:
-2021-03-04 21:37:41.0858 Trace Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 21:37:41.0886 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.0904 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 21:37:41.0929 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.0954 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 21:37:41.0983 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 21:37:41.1010 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:41.1040 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.1057 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:41.1082 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.1111 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 21:37:41.1132 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.1157 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 21:37:41.1180 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 21:37:41.1205 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.1228 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 21:37:41.1248 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.1271 Trace  Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 21:37:41.1296 Trace   Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 21:37:41.1326 Trace Initializing Console Target[console]
-2021-03-04 21:37:41.1366 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 21:37:41.1390 Trace Scanning ConsoleTarget 'Console Target[console]'
-2021-03-04 21:37:41.1414 Trace  Scanning Property Layout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'' NLog.Layouts
-2021-03-04 21:37:41.1445 Trace  Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 21:37:41.1467 Trace  Scanning Property Encoding 'System.Text.ConsoleEncoding' System.Text
-2021-03-04 21:37:41.1493 Trace Console Target[console] has 1 layouts
-2021-03-04 21:37:41.1521 Trace Initializing Layout Renderer: ${message}
-2021-03-04 21:37:41.1551 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.1579 Trace Initializing Layout Renderer: ${logger}
-2021-03-04 21:37:41.1600 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.1626 Trace Initializing Layout Renderer: ${level}
-2021-03-04 21:37:41.1647 Trace Initializing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 21:37:41.1670 Trace FindReachableObject<System.Object>:
-2021-03-04 21:37:41.1691 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:41.1718 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.1748 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:41.1778 Trace Initializing Layout Renderer: ${uppercase}
-2021-03-04 21:37:41.1804 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.1823 Trace Initializing Layout Renderer: ${longdate}
-2021-03-04 21:37:41.1849 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
-2021-03-04 21:37:41.1879 Trace FindReachableObject<System.Object>:
-2021-03-04 21:37:41.1910 Trace Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 21:37:41.1941 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.1968 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 21:37:41.1998 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.2026 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 21:37:41.2049 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 21:37:41.2070 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 21:37:41.2089 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.2107 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 21:37:41.2124 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.2143 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 21:37:41.2167 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.2189 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 21:37:41.2209 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.2228 Trace Initializing 'logevent'
-2021-03-04 21:37:41.2247 Trace FindReachableObject<System.Object>:
-2021-03-04 21:37:41.2267 Trace Scanning SimpleLayout ''logevent''
-2021-03-04 21:37:41.2287 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.2306 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.2326 Trace Initializing Layout Renderer: ${date}
-2021-03-04 21:37:41.2346 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 21:37:41.2367 Trace Initializing 'logstash-${date:format=yyyy.MM.dd}'
-2021-03-04 21:37:41.2390 Trace FindReachableObject<System.Object>:
-2021-03-04 21:37:41.2416 Trace Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 21:37:41.2442 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.2466 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.2489 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 21:37:41.2510 Trace Initializing ElasticSearch Target[ElasticSearch]
-2021-03-04 21:37:41.2547 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 21:37:41.2567 Trace Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 21:37:41.2599 Trace  Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 21:37:41.2620 Trace  Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 21:37:41.2641 Trace  Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 21:37:41.2664 Trace  Scanning SimpleLayout ''logevent''
-2021-03-04 21:37:41.2693 Trace  Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 21:37:41.2713 Trace  Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 21:37:41.2738 Trace  Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 21:37:41.2764 Trace ElasticSearch Target[ElasticSearch] has 3 layouts
-2021-03-04 21:37:41.2803 Trace FindReachableObject<System.Object>:
-2021-03-04 21:37:41.2826 Trace Scanning SimpleLayout ''http://localhost:9200''
-2021-03-04 21:37:41.2853 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 21:37:41.2879 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 21:37:41.3129 Trace Initializing BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 21:37:41.3161 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 21:37:41.3184 Trace Scanning BufferingTargetWrapper 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'
-2021-03-04 21:37:41.3212 Trace  Scanning Property WrappedTarget 'ElasticSearch Target[ElasticSearch]' NLog.Targets
-2021-03-04 21:37:41.3230 Trace  Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 21:37:41.3254 Trace   Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 21:37:41.3275 Trace   Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 21:37:41.3292 Trace   Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 21:37:41.3311 Trace   Scanning SimpleLayout ''logevent''
-2021-03-04 21:37:41.3335 Trace   Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 21:37:41.3356 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 21:37:41.3375 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 21:37:41.3395 Trace BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch]) has 3 layouts
-2021-03-04 21:37:41.3422 Trace BufferingWrapper(Name=ElasticSearch): Create Timer
-2021-03-04 21:37:41.3524 Debug Targets for ValidaSenha.Api.Program by level:
-2021-03-04 21:37:41.3552 Debug Trace =>
-2021-03-04 21:37:41.3576 Debug Debug => ElasticSearch console
-2021-03-04 21:37:41.3595 Debug Info => ElasticSearch console
-2021-03-04 21:37:41.3616 Debug Warn => ElasticSearch console
-2021-03-04 21:37:41.3641 Debug Error => ElasticSearch console
-2021-03-04 21:37:41.3665 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:41.8874 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 21:37:41.9193 Debug Hide assemblies for callsite
-2021-03-04 21:37:41.9224 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 21:37:41.9375 Debug Targets for Microsoft.Extensions.Hosting.Internal.ApplicationLifetime by level:
-2021-03-04 21:37:41.9400 Debug Trace =>
-2021-03-04 21:37:41.9420 Debug Debug => ElasticSearch console
-2021-03-04 21:37:41.9437 Debug Info => ElasticSearch console
-2021-03-04 21:37:41.9462 Debug Warn => ElasticSearch console
-2021-03-04 21:37:41.9487 Debug Error => ElasticSearch console
-2021-03-04 21:37:41.9508 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:41.9546 Debug Targets for Microsoft.Extensions.Hosting.Internal.Host by level:
-2021-03-04 21:37:41.9577 Debug Trace =>
-2021-03-04 21:37:41.9593 Debug Debug => ElasticSearch console
-2021-03-04 21:37:41.9613 Debug Info => ElasticSearch console
-2021-03-04 21:37:41.9641 Debug Warn => ElasticSearch console
-2021-03-04 21:37:41.9667 Debug Error => ElasticSearch console
-2021-03-04 21:37:41.9691 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:41.9732 Debug Targets for Microsoft.Hosting.Lifetime by level:
-2021-03-04 21:37:41.9752 Debug Trace =>
-2021-03-04 21:37:41.9780 Debug Debug => ElasticSearch console
-2021-03-04 21:37:41.9808 Debug Info => ElasticSearch console
-2021-03-04 21:37:41.9826 Debug Warn => ElasticSearch console
-2021-03-04 21:37:41.9849 Debug Error => ElasticSearch console
-2021-03-04 21:37:41.9869 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:41.9981 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
-2021-03-04 21:37:42.0003 Debug Trace =>
-2021-03-04 21:37:42.0034 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.0062 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.0085 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.0111 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.0142 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.0298 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
-2021-03-04 21:37:42.0324 Debug Trace =>
-2021-03-04 21:37:42.0351 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.0379 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.0407 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.0427 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.0447 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.0504 Debug Targets for Microsoft.AspNetCore.Hosting.Diagnostics by level:
-2021-03-04 21:37:42.0531 Debug Trace =>
-2021-03-04 21:37:42.0555 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.0575 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.0596 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.0617 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.0636 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.1417 Debug Targets for Microsoft.AspNetCore.Mvc.MvcOptions by level:
-2021-03-04 21:37:42.1441 Debug Trace =>
-2021-03-04 21:37:42.1461 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.1481 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.1506 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.1533 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.1558 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.1612 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter by level:
-2021-03-04 21:37:42.1643 Debug Trace =>
-2021-03-04 21:37:42.1662 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.1688 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.1716 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.1744 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.1771 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.2019 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter by level:
-2021-03-04 21:37:42.2043 Debug Trace =>
-2021-03-04 21:37:42.2064 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.2085 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.2106 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.2123 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.2142 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.2170 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter by level:
-2021-03-04 21:37:42.2186 Debug Trace =>
-2021-03-04 21:37:42.2203 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.2220 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.2248 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.2275 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.2304 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.2626 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
-2021-03-04 21:37:42.2653 Debug Trace =>
-2021-03-04 21:37:42.2671 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.2698 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.2720 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.2737 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.2759 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.2903 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
-2021-03-04 21:37:42.2931 Debug Trace =>
-2021-03-04 21:37:42.2950 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.2971 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.2991 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.3018 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.3044 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.3196 Debug Targets for Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware by level:
-2021-03-04 21:37:42.3226 Debug Trace =>
-2021-03-04 21:37:42.3254 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.3283 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.3310 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.3324 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.3346 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.3528 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
-2021-03-04 21:37:42.3547 Debug Trace =>
-2021-03-04 21:37:42.3568 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.3596 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.3623 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.3644 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.3664 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.3737 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
-2021-03-04 21:37:42.3758 Debug Trace =>
-2021-03-04 21:37:42.3787 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.3816 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.3843 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.3873 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.3901 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.4009 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
-2021-03-04 21:37:42.4032 Debug Trace =>
-2021-03-04 21:37:42.4050 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.4079 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.4109 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.4130 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.4152 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.4212 Debug Targets for Microsoft.AspNetCore.Cors.Infrastructure.CorsService by level:
-2021-03-04 21:37:42.4244 Debug Trace =>
-2021-03-04 21:37:42.4273 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.4302 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.4322 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.4342 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.4365 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.4397 Debug Targets for Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware by level:
-2021-03-04 21:37:42.4421 Debug Trace =>
-2021-03-04 21:37:42.4446 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.4471 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.4493 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.4515 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.4534 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.4567 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
-2021-03-04 21:37:42.4596 Debug Trace =>
-2021-03-04 21:37:42.4624 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.4653 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.4672 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.4703 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.4729 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:42.4778 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
-2021-03-04 21:37:42.4811 Debug Trace =>
-2021-03-04 21:37:42.4841 Debug Debug => ElasticSearch console
-2021-03-04 21:37:42.4871 Debug Info => ElasticSearch console
-2021-03-04 21:37:42.4899 Debug Warn => ElasticSearch console
-2021-03-04 21:37:42.4922 Debug Error => ElasticSearch console
-2021-03-04 21:37:42.4944 Debug Fatal => ElasticSearch console
-2021-03-04 21:37:47.6286 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
+2021-03-05 18:41:00.2110 Info Message Template Auto Format enabled
+2021-03-05 18:41:00.2439 Info Loading assembly: NLog.Targets.ElasticSearch
+2021-03-05 18:41:00.2442 Debug ScanAssembly('NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a')
+2021-03-05 18:41:00.2442 Info Loading assembly: NLog.Web.AspNetCore
+2021-03-05 18:41:00.2442 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-03-05 18:41:00.2521 Debug Setting 'BufferingTargetWrapper.name' to 'ElasticSearch'
+2021-03-05 18:41:00.2854 Debug Setting 'BufferingTargetWrapper.flushTimeout' to '5000'
+2021-03-05 18:41:00.3059 Debug Setting 'DateLayoutRenderer.format' to 'yyyy.MM.dd'
+2021-03-05 18:41:00.3080 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3097 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2021-03-05 18:41:00.3104 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3104 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2021-03-05 18:41:00.3118 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-03-05 18:41:00.3118 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2021-03-05 18:41:00.3123 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3123 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.3123 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3123 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-03-05 18:41:00.3151 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-03-05 18:41:00.3153 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.3153 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.3153 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.3164 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3164 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2021-03-05 18:41:00.3164 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3164 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-03-05 18:41:00.3177 Debug Registered target ElasticSearch: NLog.Targets.ElasticSearch.ElasticSearchTarget
+2021-03-05 18:41:00.3177 Info Adding target BufferingTargetWrapper(Name=ElasticSearch)
+2021-03-05 18:41:00.3177 Debug Registered target ElasticSearch: NLog.Targets.Wrappers.BufferingTargetWrapper
+2021-03-05 18:41:00.3188 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3188 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2021-03-05 18:41:00.3188 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-03-05 18:41:00.3193 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2021-03-05 18:41:00.3193 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3193 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.3193 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3193 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-03-05 18:41:00.3193 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-03-05 18:41:00.3193 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.3193 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.3202 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.3202 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3202 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2021-03-05 18:41:00.3202 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3202 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-03-05 18:41:00.3202 Debug Setting 'ConsoleTarget.name' to 'console'
+2021-03-05 18:41:00.3213 Debug Setting 'ConsoleTarget.layout' to '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
+2021-03-05 18:41:00.3213 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3213 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2021-03-05 18:41:00.3213 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2021-03-05 18:41:00.3213 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2021-03-05 18:41:00.3213 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3213 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.3223 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3223 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-03-05 18:41:00.3223 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-03-05 18:41:00.3223 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.3223 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.3223 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.3223 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3223 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-03-05 18:41:00.3320 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3322 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2021-03-05 18:41:00.3322 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2021-03-05 18:41:00.3322 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3322 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2021-03-05 18:41:00.3338 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2021-03-05 18:41:00.3338 Trace Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
+2021-03-05 18:41:00.3338 Trace  Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
+2021-03-05 18:41:00.3347 Info Adding target ConsoleTarget(Name=console)
+2021-03-05 18:41:00.3347 Debug Registered target console: NLog.Targets.ConsoleTarget
+2021-03-05 18:41:00.3354 Trace ParseRulesElement
+2021-03-05 18:41:00.3433 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
+2021-03-05 18:41:00.3471 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
+2021-03-05 18:41:00.4186 Debug Watching path '/Users/dagoavi/Downloads/hiring-bliz-dotnet/src/ValidaSenha.Api/bin/Debug/netcoreapp3.1' filter 'nlog.config' for changes.
+2021-03-05 18:41:00.4196 Debug --- NLog configuration dump ---
+2021-03-05 18:41:00.4217 Debug Targets:
+2021-03-05 18:41:00.4217 Debug BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
+2021-03-05 18:41:00.4224 Debug Console Target[console]
+2021-03-05 18:41:00.4224 Debug Rules:
+2021-03-05 18:41:00.4238 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ElasticSearch console ]
+2021-03-05 18:41:00.4238 Debug --- End of NLog configuration dump ---
+2021-03-05 18:41:00.4264 Trace FindReachableObject<System.Object>:
+2021-03-05 18:41:00.4264 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ElasticSearch console ]'
+2021-03-05 18:41:00.4264 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2021-03-05 18:41:00.4264 Trace  Scanning BufferingTargetWrapper 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'
+2021-03-05 18:41:00.4273 Trace   Scanning Property WrappedTarget 'ElasticSearch Target[ElasticSearch]' NLog.Targets
+2021-03-05 18:41:00.4273 Trace   Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
+2021-03-05 18:41:00.4273 Trace    Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
+2021-03-05 18:41:00.4273 Trace    Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
+2021-03-05 18:41:00.4273 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4273 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4285 Trace     Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2021-03-05 18:41:00.4285 Trace    Scanning Property DocumentType ''logevent'' NLog.Layouts
+2021-03-05 18:41:00.4285 Trace    Scanning SimpleLayout ''logevent''
+2021-03-05 18:41:00.4285 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4294 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4294 Trace    Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
+2021-03-05 18:41:00.4440 Trace    Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2021-03-05 18:41:00.4443 Trace    Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2021-03-05 18:41:00.4443 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4443 Trace     Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2021-03-05 18:41:00.4443 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4443 Trace     Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-03-05 18:41:00.4443 Trace      Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-03-05 18:41:00.4443 Trace      Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.4453 Trace       Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4453 Trace       Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.4453 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4453 Trace     Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2021-03-05 18:41:00.4453 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4453 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-03-05 18:41:00.4453 Trace  Scanning ConsoleTarget 'Console Target[console]'
+2021-03-05 18:41:00.4464 Trace   Scanning Property Layout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'' NLog.Layouts
+2021-03-05 18:41:00.4464 Trace   Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
+2021-03-05 18:41:00.4464 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4464 Trace    Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2021-03-05 18:41:00.4464 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4464 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-03-05 18:41:00.4464 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-03-05 18:41:00.4474 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.4474 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4474 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.4474 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4474 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-03-05 18:41:00.4474 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4474 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2021-03-05 18:41:00.4482 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2021-03-05 18:41:00.4482 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4482 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2021-03-05 18:41:00.4482 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4482 Trace    Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
+2021-03-05 18:41:00.4482 Trace     Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
+2021-03-05 18:41:00.4513 Trace   Scanning Property Encoding 'System.Text.UTF8Encoding' System.Text
+2021-03-05 18:41:00.4513 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2021-03-05 18:41:00.4513 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2021-03-05 18:41:00.4513 Info Found 33 configuration items
+2021-03-05 18:41:00.4530 Trace Initializing Layout Renderer: ${all-event-properties}
+2021-03-05 18:41:00.4534 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4534 Trace Initializing Layout Renderer: ${logger}
+2021-03-05 18:41:00.4534 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4534 Trace Initializing Layout Renderer: ${exception}
+2021-03-05 18:41:00.4534 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4534 Trace Initializing Layout Renderer: ${message}
+2021-03-05 18:41:00.4543 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4543 Trace Initializing Layout Renderer: ${level}
+2021-03-05 18:41:00.4543 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2021-03-05 18:41:00.4560 Trace FindReachableObject<System.Object>:
+2021-03-05 18:41:00.4560 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.4563 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4563 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.4586 Trace Initializing Layout Renderer: ${uppercase}
+2021-03-05 18:41:00.4586 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4586 Trace Initializing Layout Renderer: ${date}
+2021-03-05 18:41:00.4586 Trace Initializing '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
+2021-03-05 18:41:00.4586 Trace FindReachableObject<System.Object>:
+2021-03-05 18:41:00.4593 Trace Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
+2021-03-05 18:41:00.4593 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4593 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2021-03-05 18:41:00.4593 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4593 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-03-05 18:41:00.4593 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-03-05 18:41:00.4593 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.4602 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4602 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.4602 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4602 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-03-05 18:41:00.4602 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4602 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
+2021-03-05 18:41:00.4602 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
+2021-03-05 18:41:00.4602 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4602 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2021-03-05 18:41:00.4613 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4613 Trace  Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
+2021-03-05 18:41:00.4613 Trace   Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
+2021-03-05 18:41:00.4613 Trace Initializing Console Target[console]
+2021-03-05 18:41:00.4630 Trace FindReachableObject<NLog.Layouts.Layout>:
+2021-03-05 18:41:00.4630 Trace Scanning ConsoleTarget 'Console Target[console]'
+2021-03-05 18:41:00.4633 Trace  Scanning Property Layout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'' NLog.Layouts
+2021-03-05 18:41:00.4633 Trace  Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
+2021-03-05 18:41:00.4633 Trace  Scanning Property Encoding 'System.Text.UTF8Encoding' System.Text
+2021-03-05 18:41:00.4633 Trace Console Target[console] has 1 layouts
+2021-03-05 18:41:00.4645 Trace Initializing Layout Renderer: ${message}
+2021-03-05 18:41:00.4645 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4645 Trace Initializing Layout Renderer: ${logger}
+2021-03-05 18:41:00.4645 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4645 Trace Initializing Layout Renderer: ${level}
+2021-03-05 18:41:00.4645 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2021-03-05 18:41:00.4645 Trace FindReachableObject<System.Object>:
+2021-03-05 18:41:00.4653 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.4653 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4653 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.4653 Trace Initializing Layout Renderer: ${uppercase}
+2021-03-05 18:41:00.4653 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4653 Trace Initializing Layout Renderer: ${longdate}
+2021-03-05 18:41:00.4653 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
+2021-03-05 18:41:00.4653 Trace FindReachableObject<System.Object>:
+2021-03-05 18:41:00.4662 Trace Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2021-03-05 18:41:00.4662 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4662 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2021-03-05 18:41:00.4662 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4662 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2021-03-05 18:41:00.4662 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2021-03-05 18:41:00.4662 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2021-03-05 18:41:00.4662 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4672 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2021-03-05 18:41:00.4672 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4672 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2021-03-05 18:41:00.4672 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4672 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2021-03-05 18:41:00.4672 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4672 Trace Initializing 'logevent'
+2021-03-05 18:41:00.4672 Trace FindReachableObject<System.Object>:
+2021-03-05 18:41:00.4672 Trace Scanning SimpleLayout ''logevent''
+2021-03-05 18:41:00.4683 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4683 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4683 Trace Initializing Layout Renderer: ${date}
+2021-03-05 18:41:00.4683 Trace Initializing Layout Renderer: ${literal}
+2021-03-05 18:41:00.4683 Trace Initializing 'logstash-${date:format=yyyy.MM.dd}'
+2021-03-05 18:41:00.4683 Trace FindReachableObject<System.Object>:
+2021-03-05 18:41:00.4683 Trace Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
+2021-03-05 18:41:00.4683 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4683 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.4693 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
+2021-03-05 18:41:00.4693 Trace Initializing ElasticSearch Target[ElasticSearch]
+2021-03-05 18:41:00.4713 Trace FindReachableObject<NLog.Layouts.Layout>:
+2021-03-05 18:41:00.4713 Trace Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
+2021-03-05 18:41:00.4713 Trace  Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
+2021-03-05 18:41:00.4713 Trace  Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
+2021-03-05 18:41:00.4713 Trace  Scanning Property DocumentType ''logevent'' NLog.Layouts
+2021-03-05 18:41:00.4713 Trace  Scanning SimpleLayout ''logevent''
+2021-03-05 18:41:00.4713 Trace  Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
+2021-03-05 18:41:00.4713 Trace  Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2021-03-05 18:41:00.4722 Trace  Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2021-03-05 18:41:00.4722 Trace ElasticSearch Target[ElasticSearch] has 3 layouts
+2021-03-05 18:41:00.4735 Trace FindReachableObject<System.Object>:
+2021-03-05 18:41:00.4735 Trace Scanning SimpleLayout ''http://localhost:9200''
+2021-03-05 18:41:00.4735 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2021-03-05 18:41:00.4735 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2021-03-05 18:41:00.5289 Trace Initializing BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
+2021-03-05 18:41:00.5381 Trace FindReachableObject<NLog.Layouts.Layout>:
+2021-03-05 18:41:00.5384 Trace Scanning BufferingTargetWrapper 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'
+2021-03-05 18:41:00.5384 Trace  Scanning Property WrappedTarget 'ElasticSearch Target[ElasticSearch]' NLog.Targets
+2021-03-05 18:41:00.5384 Trace  Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
+2021-03-05 18:41:00.5384 Trace   Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
+2021-03-05 18:41:00.5384 Trace   Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
+2021-03-05 18:41:00.5384 Trace   Scanning Property DocumentType ''logevent'' NLog.Layouts
+2021-03-05 18:41:00.5393 Trace   Scanning SimpleLayout ''logevent''
+2021-03-05 18:41:00.5393 Trace   Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
+2021-03-05 18:41:00.5393 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
+2021-03-05 18:41:00.5393 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
+2021-03-05 18:41:00.5393 Trace BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch]) has 3 layouts
+2021-03-05 18:41:00.5393 Trace BufferingWrapper(Name=ElasticSearch): Create Timer
+2021-03-05 18:41:00.5664 Debug Targets for ValidaSenha.Api.Program by level:
+2021-03-05 18:41:00.5664 Debug Trace =>
+2021-03-05 18:41:00.5664 Debug Debug => ElasticSearch console
+2021-03-05 18:41:00.5664 Debug Info => ElasticSearch console
+2021-03-05 18:41:00.5664 Debug Warn => ElasticSearch console
+2021-03-05 18:41:00.5664 Debug Error => ElasticSearch console
+2021-03-05 18:41:00.5664 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.7448 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-03-05 18:41:02.7900 Debug Hide assemblies for callsite
+2021-03-05 18:41:02.7900 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2021-03-05 18:41:02.8010 Debug Targets for Microsoft.Extensions.Hosting.Internal.ApplicationLifetime by level:
+2021-03-05 18:41:02.8010 Debug Trace =>
+2021-03-05 18:41:02.8013 Debug Debug => ElasticSearch console
+2021-03-05 18:41:02.8013 Debug Info => ElasticSearch console
+2021-03-05 18:41:02.8013 Debug Warn => ElasticSearch console
+2021-03-05 18:41:02.8013 Debug Error => ElasticSearch console
+2021-03-05 18:41:02.8013 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.8043 Debug Targets for Microsoft.Extensions.Hosting.Internal.Host by level:
+2021-03-05 18:41:02.8043 Debug Trace =>
+2021-03-05 18:41:02.8043 Debug Debug => ElasticSearch console
+2021-03-05 18:41:02.8043 Debug Info => ElasticSearch console
+2021-03-05 18:41:02.8043 Debug Warn => ElasticSearch console
+2021-03-05 18:41:02.8043 Debug Error => ElasticSearch console
+2021-03-05 18:41:02.8043 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.8069 Debug Targets for Microsoft.Hosting.Lifetime by level:
+2021-03-05 18:41:02.8069 Debug Trace =>
+2021-03-05 18:41:02.8069 Debug Debug => ElasticSearch console
+2021-03-05 18:41:02.8073 Debug Info => ElasticSearch console
+2021-03-05 18:41:02.8073 Debug Warn => ElasticSearch console
+2021-03-05 18:41:02.8073 Debug Error => ElasticSearch console
+2021-03-05 18:41:02.8073 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.8446 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
+2021-03-05 18:41:02.8446 Debug Trace =>
+2021-03-05 18:41:02.8446 Debug Debug => ElasticSearch console
+2021-03-05 18:41:02.8446 Debug Info => ElasticSearch console
+2021-03-05 18:41:02.8446 Debug Warn => ElasticSearch console
+2021-03-05 18:41:02.8455 Debug Error => ElasticSearch console
+2021-03-05 18:41:02.8455 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.8613 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
+2021-03-05 18:41:02.8613 Debug Trace =>
+2021-03-05 18:41:02.8613 Debug Debug => ElasticSearch console
+2021-03-05 18:41:02.8613 Debug Info => ElasticSearch console
+2021-03-05 18:41:02.8613 Debug Warn => ElasticSearch console
+2021-03-05 18:41:02.8613 Debug Error => ElasticSearch console
+2021-03-05 18:41:02.8613 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.8662 Debug Targets for Microsoft.AspNetCore.Hosting.Diagnostics by level:
+2021-03-05 18:41:02.8664 Debug Trace =>
+2021-03-05 18:41:02.8664 Debug Debug => ElasticSearch console
+2021-03-05 18:41:02.8664 Debug Info => ElasticSearch console
+2021-03-05 18:41:02.8664 Debug Warn => ElasticSearch console
+2021-03-05 18:41:02.8664 Debug Error => ElasticSearch console
+2021-03-05 18:41:02.8664 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.9565 Debug Targets for Microsoft.AspNetCore.Mvc.MvcOptions by level:
+2021-03-05 18:41:02.9565 Debug Trace =>
+2021-03-05 18:41:02.9565 Debug Debug => ElasticSearch console
+2021-03-05 18:41:02.9565 Debug Info => ElasticSearch console
+2021-03-05 18:41:02.9565 Debug Warn => ElasticSearch console
+2021-03-05 18:41:02.9573 Debug Error => ElasticSearch console
+2021-03-05 18:41:02.9573 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.9629 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter by level:
+2021-03-05 18:41:02.9629 Debug Trace =>
+2021-03-05 18:41:02.9629 Debug Debug => ElasticSearch console
+2021-03-05 18:41:02.9634 Debug Info => ElasticSearch console
+2021-03-05 18:41:02.9634 Debug Warn => ElasticSearch console
+2021-03-05 18:41:02.9634 Debug Error => ElasticSearch console
+2021-03-05 18:41:02.9634 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:02.9999 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter by level:
+2021-03-05 18:41:02.9999 Debug Trace =>
+2021-03-05 18:41:03.0003 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.0003 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.0003 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.0003 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.0003 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.0014 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter by level:
+2021-03-05 18:41:03.0014 Debug Trace =>
+2021-03-05 18:41:03.0014 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.0014 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.0014 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.0014 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.0014 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.0739 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
+2021-03-05 18:41:03.0739 Debug Trace =>
+2021-03-05 18:41:03.0739 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.0744 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.0744 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.0744 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.0744 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.1034 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
+2021-03-05 18:41:03.1034 Debug Trace =>
+2021-03-05 18:41:03.1034 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.1034 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.1034 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.1034 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.1034 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.1284 Debug Targets for Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware by level:
+2021-03-05 18:41:03.1284 Debug Trace =>
+2021-03-05 18:41:03.1284 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.1284 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.1284 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.1284 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.1284 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.2008 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
+2021-03-05 18:41:03.2008 Debug Trace =>
+2021-03-05 18:41:03.2008 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.2008 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.2014 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.2014 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.2014 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.2091 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
+2021-03-05 18:41:03.2094 Debug Trace =>
+2021-03-05 18:41:03.2094 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.2094 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.2094 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.2094 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.2094 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.2324 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
+2021-03-05 18:41:03.2324 Debug Trace =>
+2021-03-05 18:41:03.2324 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.2333 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.2333 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.2333 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.2333 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.2393 Debug Targets for Microsoft.AspNetCore.Cors.Infrastructure.CorsService by level:
+2021-03-05 18:41:03.2393 Debug Trace =>
+2021-03-05 18:41:03.2393 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.2393 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.2404 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.2404 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.2404 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.2404 Debug Targets for Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware by level:
+2021-03-05 18:41:03.2404 Debug Trace =>
+2021-03-05 18:41:03.2413 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.2413 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.2413 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.2413 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.2413 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.2430 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
+2021-03-05 18:41:03.2430 Debug Trace =>
+2021-03-05 18:41:03.2433 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.2433 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.2433 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.2433 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.2433 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:03.2475 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
+2021-03-05 18:41:03.2475 Debug Trace =>
+2021-03-05 18:41:03.2475 Debug Debug => ElasticSearch console
+2021-03-05 18:41:03.2475 Debug Info => ElasticSearch console
+2021-03-05 18:41:03.2475 Debug Warn => ElasticSearch console
+2021-03-05 18:41:03.2485 Debug Error => ElasticSearch console
+2021-03-05 18:41:03.2485 Debug Fatal => ElasticSearch console
+2021-03-05 18:41:08.4568 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
  ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
  ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
  ---> System.Net.Http.HttpRequestException: Connection refused
@@ -423,13 +423,7 @@
    at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
    at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
    --- End of inner exception stack trace ---
-2021-03-04 21:37:54.6914 Trace LogFactory.Flush(00:00:15)
-2021-03-04 21:37:54.6966 Trace Flushing all targets...
-2021-03-04 21:37:54.7025 Trace ForEachItemInParallel() 2 items
-2021-03-04 21:37:54.7053 Trace BufferingWrapper(Name=ElasticSearch): Writing 1 events (Flush Async)
-2021-03-04 21:37:54.7056 Trace Continuation invoked: 
-2021-03-04 21:37:54.7100 Trace Parallel task completed. 1 items remaining
-2021-03-04 21:37:54.7238 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
+2021-03-05 18:41:50.4018 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
  ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
  ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
  ---> System.Net.Http.HttpRequestException: Connection refused
@@ -451,1339 +445,80 @@
    at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
    at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
    --- End of inner exception stack trace ---
-2021-03-04 21:37:54.7266 Trace Continuation invoked: 
-2021-03-04 21:37:54.7297 Trace Parallel task completed. 0 items remaining
-2021-03-04 21:37:54.7336 Info Shutdown() called. Logger closing...
-2021-03-04 21:37:54.7362 Info Closing old configuration.
-2021-03-04 21:37:54.7386 Trace LogFactory.Flush(00:00:15)
-2021-03-04 21:37:54.7415 Trace Flushing all targets...
-2021-03-04 21:37:54.7447 Trace ForEachItemInParallel() 2 items
-2021-03-04 21:37:54.7472 Trace Continuation invoked: 
-2021-03-04 21:37:54.7474 Trace Continuation invoked: 
-2021-03-04 21:37:54.7494 Trace Parallel task completed. 1 items remaining
-2021-03-04 21:37:54.7518 Trace Parallel task completed. 0 items remaining
-2021-03-04 21:37:54.7569 Debug Closing logging configuration...
-2021-03-04 21:37:54.7601 Trace Closing BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 21:37:54.7627 Debug Closing target 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'.
-2021-03-04 21:37:54.7651 Debug Closed target 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'.
-2021-03-04 21:37:54.7677 Trace Closing ElasticSearch Target[ElasticSearch]
-2021-03-04 21:37:54.7699 Debug Closing target 'ElasticSearch Target[ElasticSearch]'.
-2021-03-04 21:37:54.7723 Debug Closed target 'ElasticSearch Target[ElasticSearch]'.
-2021-03-04 21:37:54.7754 Trace Closing 'logstash-${date:format=yyyy.MM.dd}'
-2021-03-04 21:37:54.7787 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.7809 Trace Closing Layout Renderer: ${date}
-2021-03-04 21:37:54.7831 Trace Closing 'logevent'
-2021-03-04 21:37:54.7859 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.7885 Trace Closing '${longdate}|${level:uppercase=true}|${logger}|${message}'
-2021-03-04 21:37:54.7916 Trace Closing Layout Renderer: ${longdate}
-2021-03-04 21:37:54.7947 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.7976 Trace Closing Layout Renderer: ${uppercase}
-2021-03-04 21:37:54.8007 Trace Closing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 21:37:54.8033 Trace Closing Layout Renderer: ${level}
-2021-03-04 21:37:54.8058 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.8081 Trace Closing Layout Renderer: ${logger}
-2021-03-04 21:37:54.8102 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.8121 Trace Closing Layout Renderer: ${message}
-2021-03-04 21:37:54.8141 Trace Closing Console Target[console]
-2021-03-04 21:37:54.8162 Debug Closing target 'Console Target[console]'.
-2021-03-04 21:37:54.8194 Debug Closed target 'Console Target[console]'.
-2021-03-04 21:37:54.8225 Trace Closing '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 21:37:54.8257 Trace Closing Layout Renderer: ${date}
-2021-03-04 21:37:54.8285 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.8304 Trace Closing Layout Renderer: ${uppercase}
-2021-03-04 21:37:54.8326 Trace Closing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 21:37:54.8352 Trace Closing Layout Renderer: ${level}
-2021-03-04 21:37:54.8381 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.8400 Trace Closing Layout Renderer: ${message}
-2021-03-04 21:37:54.8432 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.8454 Trace Closing Layout Renderer: ${exception}
-2021-03-04 21:37:54.8476 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.8496 Trace Closing Layout Renderer: ${logger}
-2021-03-04 21:37:54.8518 Trace Closing Layout Renderer: ${literal}
-2021-03-04 21:37:54.8548 Trace Closing Layout Renderer: ${all-event-properties}
-2021-03-04 21:37:54.8579 Debug Finished closing logging configuration.
-2021-03-04 21:37:54.8614 Debug Stopping file watching for path '/Users/albardo/hiring/itilab-master/src/ValidaSenha.Api/bin/Debug/netcoreapp3.1' filter 'nlog.config'
-2021-03-04 22:44:19.5079 Info Message Template Auto Format enabled
-2021-03-04 22:44:19.6989 Info Loading assembly: NLog.Targets.ElasticSearch
-2021-03-04 22:44:19.7013 Debug ScanAssembly('NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a')
-2021-03-04 22:44:19.7063 Info Loading assembly: NLog.Web.AspNetCore
-2021-03-04 22:44:19.7113 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 22:44:19.7250 Debug Setting 'BufferingTargetWrapper.name' to 'ElasticSearch'
-2021-03-04 22:44:19.7518 Debug Setting 'BufferingTargetWrapper.flushTimeout' to '5000'
-2021-03-04 22:44:19.7729 Debug Setting 'DateLayoutRenderer.format' to 'yyyy.MM.dd'
-2021-03-04 22:44:19.7927 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.8019 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:44:19.8083 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.8138 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 22:44:19.8363 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 22:44:19.8394 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 22:44:19.8417 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.8438 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:19.8460 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.8484 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:44:19.8537 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:44:19.8563 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:19.8587 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:19.8616 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:19.8639 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.8667 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:44:19.8851 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.8885 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:44:19.8933 Debug Registered target ElasticSearch: NLog.Targets.ElasticSearch.ElasticSearchTarget
-2021-03-04 22:44:19.8974 Info Adding target BufferingTargetWrapper(Name=ElasticSearch)
-2021-03-04 22:44:19.9007 Debug Registered target ElasticSearch: NLog.Targets.Wrappers.BufferingTargetWrapper
-2021-03-04 22:44:19.9051 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.9112 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 22:44:19.9169 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 22:44:19.9388 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 22:44:19.9426 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.9495 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:19.9528 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.9562 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:44:19.9597 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:44:19.9642 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:19.9672 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:19.9858 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:19.9894 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:19.9930 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:44:19.9963 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:20.0031 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:44:20.0093 Debug Setting 'ConsoleTarget.name' to 'console'
-2021-03-04 22:44:20.0142 Debug Setting 'ConsoleTarget.layout' to '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 22:44:20.0339 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:20.0376 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:44:20.0426 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 22:44:20.0503 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 22:44:20.0554 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:20.0607 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:20.0664 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:20.0876 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:44:20.0940 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:44:20.1010 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:20.1070 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.1132 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:20.1341 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:20.1379 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:44:20.1585 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:20.1630 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 22:44:20.1670 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 22:44:20.1889 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:20.1927 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:44:20.1973 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:44:20.2012 Trace Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 22:44:20.2079 Trace  Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 22:44:20.2144 Info Adding target ConsoleTarget(Name=console)
-2021-03-04 22:44:20.2363 Debug Registered target console: NLog.Targets.ConsoleTarget
-2021-03-04 22:44:20.2412 Trace ParseRulesElement
-2021-03-04 22:44:20.2570 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
-2021-03-04 22:44:20.2639 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
-2021-03-04 22:44:20.3279 Debug Watching path '/Users/albardo/hiring/itilab-master/src/ValidaSenha.Api/bin/Debug/netcoreapp3.1' filter 'nlog.config' for changes.
-2021-03-04 22:44:20.3375 Debug --- NLog configuration dump ---
-2021-03-04 22:44:20.3412 Debug Targets:
-2021-03-04 22:44:20.3449 Debug BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 22:44:20.3483 Debug Console Target[console]
-2021-03-04 22:44:20.3525 Debug Rules:
-2021-03-04 22:44:20.3577 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ElasticSearch console ]
-2021-03-04 22:44:20.3619 Debug --- End of NLog configuration dump ---
-2021-03-04 22:44:20.3679 Trace FindReachableObject<System.Object>:
-2021-03-04 22:44:20.3889 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ElasticSearch console ]'
-2021-03-04 22:44:20.3925 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
-2021-03-04 22:44:20.3961 Trace  Scanning BufferingTargetWrapper 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'
-2021-03-04 22:44:20.4001 Trace   Scanning Property WrappedTarget 'ElasticSearch Target[ElasticSearch]' NLog.Targets
-2021-03-04 22:44:20.4035 Trace   Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 22:44:20.4076 Trace    Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 22:44:20.4114 Trace    Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 22:44:20.4143 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.4171 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.4356 Trace     Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:44:20.4397 Trace    Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 22:44:20.4434 Trace    Scanning SimpleLayout ''logevent''
-2021-03-04 22:44:20.4472 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.4507 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.4573 Trace    Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 22:44:20.5016 Trace    Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 22:44:20.5082 Trace    Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 22:44:20.5130 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.5342 Trace     Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 22:44:20.5380 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.5417 Trace     Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:44:20.5448 Trace      Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:44:20.5476 Trace      Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:20.5527 Trace       Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.5573 Trace       Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:20.5608 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.5644 Trace     Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:44:20.5675 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.5861 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:44:20.5893 Trace  Scanning ConsoleTarget 'Console Target[console]'
-2021-03-04 22:44:20.5927 Trace   Scanning Property Layout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'' NLog.Layouts
-2021-03-04 22:44:20.5963 Trace   Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 22:44:20.6004 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.6054 Trace    Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:44:20.6101 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.6151 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:44:20.6341 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:44:20.6402 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:20.6463 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.6525 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:20.6583 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.6637 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:44:20.6845 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.6880 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 22:44:20.6943 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 22:44:20.7016 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.7078 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:44:20.7131 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.7332 Trace    Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 22:44:20.7395 Trace     Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 22:44:20.7491 Trace   Scanning Property Encoding 'System.Text.ConsoleEncoding' System.Text
-2021-03-04 22:44:20.7560 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
-2021-03-04 22:44:20.7619 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
-2021-03-04 22:44:20.7680 Info Found 33 configuration items
-2021-03-04 22:44:20.7912 Trace Initializing Layout Renderer: ${all-event-properties}
-2021-03-04 22:44:20.7951 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:20.8027 Trace Initializing Layout Renderer: ${logger}
-2021-03-04 22:44:20.8084 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:20.8140 Trace Initializing Layout Renderer: ${exception}
-2021-03-04 22:44:20.8357 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:20.8406 Trace Initializing Layout Renderer: ${message}
-2021-03-04 22:44:20.8434 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:20.8463 Trace Initializing Layout Renderer: ${level}
-2021-03-04 22:44:20.8491 Trace Initializing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 22:44:20.8537 Trace FindReachableObject<System.Object>:
-2021-03-04 22:44:20.8569 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:20.8591 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.8616 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:20.8672 Trace Initializing Layout Renderer: ${uppercase}
-2021-03-04 22:44:20.8861 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:20.8899 Trace Initializing Layout Renderer: ${date}
-2021-03-04 22:44:20.8931 Trace Initializing '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 22:44:20.9000 Trace FindReachableObject<System.Object>:
-2021-03-04 22:44:20.9069 Trace Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 22:44:20.9134 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.9349 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:44:20.9392 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.9434 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:44:20.9473 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:44:20.9545 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:20.9609 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:20.9675 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:20.9892 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:20.9950 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:44:21.0012 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.0066 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 22:44:21.0129 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 22:44:21.0342 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.0380 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:44:21.0417 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.0448 Trace  Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 22:44:21.0480 Trace   Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 22:44:21.0524 Trace Initializing Console Target[console]
-2021-03-04 22:44:21.0571 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 22:44:21.0606 Trace Scanning ConsoleTarget 'Console Target[console]'
-2021-03-04 22:44:21.0640 Trace  Scanning Property Layout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'' NLog.Layouts
-2021-03-04 22:44:21.0668 Trace  Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 22:44:21.0884 Trace  Scanning Property Encoding 'System.Text.ConsoleEncoding' System.Text
-2021-03-04 22:44:21.0924 Trace Console Target[console] has 1 layouts
-2021-03-04 22:44:21.0975 Trace Initializing Layout Renderer: ${message}
-2021-03-04 22:44:21.1014 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:21.1066 Trace Initializing Layout Renderer: ${logger}
-2021-03-04 22:44:21.1114 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:21.1154 Trace Initializing Layout Renderer: ${level}
-2021-03-04 22:44:21.1340 Trace Initializing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 22:44:21.1385 Trace FindReachableObject<System.Object>:
-2021-03-04 22:44:21.1439 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:21.1489 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:21.1546 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:21.1588 Trace Initializing Layout Renderer: ${uppercase}
-2021-03-04 22:44:21.1639 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:21.1845 Trace Initializing Layout Renderer: ${longdate}
-2021-03-04 22:44:21.1909 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
-2021-03-04 22:44:21.1972 Trace FindReachableObject<System.Object>:
-2021-03-04 22:44:21.2036 Trace Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 22:44:21.2101 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:21.2157 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 22:44:21.2364 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.2431 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:44:21.2488 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:44:21.2544 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:44:21.2601 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:21.2657 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:44:21.2852 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.2890 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:44:21.2929 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.2963 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:44:21.2995 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:21.3029 Trace Initializing 'logevent'
-2021-03-04 22:44:21.3061 Trace FindReachableObject<System.Object>:
-2021-03-04 22:44:21.3102 Trace Scanning SimpleLayout ''logevent''
-2021-03-04 22:44:21.3136 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:21.3171 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.3387 Trace Initializing Layout Renderer: ${date}
-2021-03-04 22:44:21.3452 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:44:21.3501 Trace Initializing 'logstash-${date:format=yyyy.MM.dd}'
-2021-03-04 22:44:21.3557 Trace FindReachableObject<System.Object>:
-2021-03-04 22:44:21.3614 Trace Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 22:44:21.3672 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:21.3889 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.3957 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:44:21.4022 Trace Initializing ElasticSearch Target[ElasticSearch]
-2021-03-04 22:44:21.4103 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 22:44:21.4150 Trace Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 22:44:21.4337 Trace  Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 22:44:21.4387 Trace  Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 22:44:21.4436 Trace  Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 22:44:21.4488 Trace  Scanning SimpleLayout ''logevent''
-2021-03-04 22:44:21.4533 Trace  Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 22:44:21.4583 Trace  Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 22:44:21.4644 Trace  Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 22:44:21.4849 Trace ElasticSearch Target[ElasticSearch] has 3 layouts
-2021-03-04 22:44:21.4935 Trace FindReachableObject<System.Object>:
-2021-03-04 22:44:21.4994 Trace Scanning SimpleLayout ''http://localhost:9200''
-2021-03-04 22:44:21.5054 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:44:21.5119 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:44:21.5736 Trace Initializing BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 22:44:21.5877 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 22:44:21.5943 Trace Scanning BufferingTargetWrapper 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'
-2021-03-04 22:44:21.6013 Trace  Scanning Property WrappedTarget 'ElasticSearch Target[ElasticSearch]' NLog.Targets
-2021-03-04 22:44:21.6078 Trace  Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 22:44:21.6147 Trace   Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 22:44:21.6361 Trace   Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 22:44:21.6429 Trace   Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 22:44:21.6498 Trace   Scanning SimpleLayout ''logevent''
-2021-03-04 22:44:21.6571 Trace   Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 22:44:21.6634 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 22:44:21.6847 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 22:44:21.6887 Trace BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch]) has 3 layouts
-2021-03-04 22:44:21.6928 Trace BufferingWrapper(Name=ElasticSearch): Create Timer
-2021-03-04 22:44:21.7089 Debug Targets for ValidaSenha.Api.Program by level:
-2021-03-04 22:44:21.7121 Debug Trace =>
-2021-03-04 22:44:21.7146 Debug Debug => ElasticSearch console
-2021-03-04 22:44:21.7169 Debug Info => ElasticSearch console
-2021-03-04 22:44:21.7385 Debug Warn => ElasticSearch console
-2021-03-04 22:44:21.7457 Debug Error => ElasticSearch console
-2021-03-04 22:44:21.7527 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:22.6004 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 22:44:22.6516 Debug Hide assemblies for callsite
-2021-03-04 22:44:22.6566 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 22:44:22.6711 Debug Targets for Microsoft.Extensions.Hosting.Internal.ApplicationLifetime by level:
-2021-03-04 22:44:22.6885 Debug Trace =>
-2021-03-04 22:44:22.6939 Debug Debug => ElasticSearch console
-2021-03-04 22:44:22.6998 Debug Info => ElasticSearch console
-2021-03-04 22:44:22.7055 Debug Warn => ElasticSearch console
-2021-03-04 22:44:22.7107 Debug Error => ElasticSearch console
-2021-03-04 22:44:22.7165 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:22.7427 Debug Targets for Microsoft.Extensions.Hosting.Internal.Host by level:
-2021-03-04 22:44:22.7501 Debug Trace =>
-2021-03-04 22:44:22.7571 Debug Debug => ElasticSearch console
-2021-03-04 22:44:22.7639 Debug Info => ElasticSearch console
-2021-03-04 22:44:22.7859 Debug Warn => ElasticSearch console
-2021-03-04 22:44:22.7896 Debug Error => ElasticSearch console
-2021-03-04 22:44:22.7931 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:22.7996 Debug Targets for Microsoft.Hosting.Lifetime by level:
-2021-03-04 22:44:22.8032 Debug Trace =>
-2021-03-04 22:44:22.8064 Debug Debug => ElasticSearch console
-2021-03-04 22:44:22.8094 Debug Info => ElasticSearch console
-2021-03-04 22:44:22.8120 Debug Warn => ElasticSearch console
-2021-03-04 22:44:22.8147 Debug Error => ElasticSearch console
-2021-03-04 22:44:22.8173 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:22.8513 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
-2021-03-04 22:44:22.8543 Debug Trace =>
-2021-03-04 22:44:22.8571 Debug Debug => ElasticSearch console
-2021-03-04 22:44:22.8593 Debug Info => ElasticSearch console
-2021-03-04 22:44:22.8614 Debug Warn => ElasticSearch console
-2021-03-04 22:44:22.8636 Debug Error => ElasticSearch console
-2021-03-04 22:44:22.8681 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:22.9026 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
-2021-03-04 22:44:22.9053 Debug Trace =>
-2021-03-04 22:44:22.9121 Debug Debug => ElasticSearch console
-2021-03-04 22:44:22.9337 Debug Info => ElasticSearch console
-2021-03-04 22:44:22.9407 Debug Warn => ElasticSearch console
-2021-03-04 22:44:22.9476 Debug Error => ElasticSearch console
-2021-03-04 22:44:22.9549 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:22.9678 Debug Targets for Microsoft.AspNetCore.Hosting.Diagnostics by level:
-2021-03-04 22:44:22.9902 Debug Trace =>
-2021-03-04 22:44:22.9972 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.0041 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.0102 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.0155 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.0349 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.1287 Debug Targets for Microsoft.AspNetCore.Mvc.MvcOptions by level:
-2021-03-04 22:44:23.1395 Debug Trace =>
-2021-03-04 22:44:23.1464 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.1532 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.1598 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.1656 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.1880 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.2028 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter by level:
-2021-03-04 22:44:23.2091 Debug Trace =>
-2021-03-04 22:44:23.2149 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.2356 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.2419 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.2487 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.2552 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.3132 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter by level:
-2021-03-04 22:44:23.3181 Debug Trace =>
-2021-03-04 22:44:23.3385 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.3442 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.3514 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.3571 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.3617 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.3665 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter by level:
-2021-03-04 22:44:23.3888 Debug Trace =>
-2021-03-04 22:44:23.3948 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.4005 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.4063 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.4120 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.4177 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.5190 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
-2021-03-04 22:44:23.5376 Debug Trace =>
-2021-03-04 22:44:23.5409 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.5473 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.5544 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.5610 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.5678 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.6100 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
-2021-03-04 22:44:23.6129 Debug Trace =>
-2021-03-04 22:44:23.6158 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.6386 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.6463 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.6534 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.6602 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.6990 Debug Targets for Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware by level:
-2021-03-04 22:44:23.7050 Debug Trace =>
-2021-03-04 22:44:23.7109 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.7168 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.7395 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.7465 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.7537 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.8044 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
-2021-03-04 22:44:23.8093 Debug Trace =>
-2021-03-04 22:44:23.8137 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.8350 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.8421 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.8486 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.8548 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.8695 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
-2021-03-04 22:44:23.8902 Debug Trace =>
-2021-03-04 22:44:23.8958 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.9016 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.9076 Debug Warn => ElasticSearch console
-2021-03-04 22:44:23.9135 Debug Error => ElasticSearch console
-2021-03-04 22:44:23.9351 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:23.9568 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
-2021-03-04 22:44:23.9628 Debug Trace =>
-2021-03-04 22:44:23.9854 Debug Debug => ElasticSearch console
-2021-03-04 22:44:23.9898 Debug Info => ElasticSearch console
-2021-03-04 22:44:23.9935 Debug Warn => ElasticSearch console
-2021-03-04 22:44:24.0003 Debug Error => ElasticSearch console
-2021-03-04 22:44:24.0076 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:24.0208 Debug Targets for Microsoft.AspNetCore.Cors.Infrastructure.CorsService by level:
-2021-03-04 22:44:24.0409 Debug Trace =>
-2021-03-04 22:44:24.0476 Debug Debug => ElasticSearch console
-2021-03-04 22:44:24.0545 Debug Info => ElasticSearch console
-2021-03-04 22:44:24.0611 Debug Warn => ElasticSearch console
-2021-03-04 22:44:24.0679 Debug Error => ElasticSearch console
-2021-03-04 22:44:24.0912 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:24.0973 Debug Targets for Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware by level:
-2021-03-04 22:44:24.1033 Debug Trace =>
-2021-03-04 22:44:24.1095 Debug Debug => ElasticSearch console
-2021-03-04 22:44:24.1152 Debug Info => ElasticSearch console
-2021-03-04 22:44:24.1379 Debug Warn => ElasticSearch console
-2021-03-04 22:44:24.1416 Debug Error => ElasticSearch console
-2021-03-04 22:44:24.1451 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:24.1502 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
-2021-03-04 22:44:24.1538 Debug Trace =>
-2021-03-04 22:44:24.1574 Debug Debug => ElasticSearch console
-2021-03-04 22:44:24.1614 Debug Info => ElasticSearch console
-2021-03-04 22:44:24.1683 Debug Warn => ElasticSearch console
-2021-03-04 22:44:24.1915 Debug Error => ElasticSearch console
-2021-03-04 22:44:24.1953 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:24.2057 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
-2021-03-04 22:44:24.2120 Debug Trace =>
-2021-03-04 22:44:24.2174 Debug Debug => ElasticSearch console
-2021-03-04 22:44:24.2403 Debug Info => ElasticSearch console
-2021-03-04 22:44:24.2439 Debug Warn => ElasticSearch console
-2021-03-04 22:44:24.2473 Debug Error => ElasticSearch console
-2021-03-04 22:44:24.2510 Debug Fatal => ElasticSearch console
-2021-03-04 22:44:29.4437 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
- ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
- ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
- ---> System.Net.Http.HttpRequestException: Connection refused
- ---> System.Net.Sockets.SocketException (61): Connection refused
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   --- End of inner exception stack trace ---
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
-   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
-   at Elasticsearch.Net.HttpConnection.Request[TResponse](RequestData requestData)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
-   at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
-   --- End of inner exception stack trace ---
-2021-03-04 22:45:12.8322 Debug Targets for Microsoft.AspNetCore.Routing.Matching.DfaMatcher by level:
-2021-03-04 22:45:12.8403 Debug Trace =>
-2021-03-04 22:45:12.8451 Debug Debug => ElasticSearch console
-2021-03-04 22:45:12.8498 Debug Info => ElasticSearch console
-2021-03-04 22:45:12.8532 Debug Warn => ElasticSearch console
-2021-03-04 22:45:12.8569 Debug Error => ElasticSearch console
-2021-03-04 22:45:12.8605 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:12.8675 Debug Targets for ValidaSenha.Api.Infraestructure.MetricReporter by level:
-2021-03-04 22:45:12.8887 Debug Trace =>
-2021-03-04 22:45:12.8950 Debug Debug => ElasticSearch console
-2021-03-04 22:45:12.9008 Debug Info => ElasticSearch console
-2021-03-04 22:45:12.9068 Debug Warn => ElasticSearch console
-2021-03-04 22:45:12.9125 Debug Error => ElasticSearch console
-2021-03-04 22:45:12.9172 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:12.9700 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory by level:
-2021-03-04 22:45:12.9919 Debug Trace =>
-2021-03-04 22:45:12.9981 Debug Debug => ElasticSearch console
-2021-03-04 22:45:13.0046 Debug Info => ElasticSearch console
-2021-03-04 22:45:13.0102 Debug Warn => ElasticSearch console
-2021-03-04 22:45:13.0164 Debug Error => ElasticSearch console
-2021-03-04 22:45:13.0389 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:13.0528 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder by level:
-2021-03-04 22:45:13.0580 Debug Trace =>
-2021-03-04 22:45:13.0642 Debug Debug => ElasticSearch console
-2021-03-04 22:45:13.0687 Debug Info => ElasticSearch console
-2021-03-04 22:45:13.0905 Debug Warn => ElasticSearch console
-2021-03-04 22:45:13.0966 Debug Error => ElasticSearch console
-2021-03-04 22:45:13.1019 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:13.1098 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker by level:
-2021-03-04 22:45:13.1154 Debug Trace =>
-2021-03-04 22:45:13.1370 Debug Debug => ElasticSearch console
-2021-03-04 22:45:13.1446 Debug Info => ElasticSearch console
-2021-03-04 22:45:13.1503 Debug Warn => ElasticSearch console
-2021-03-04 22:45:13.1560 Debug Error => ElasticSearch console
-2021-03-04 22:45:13.1619 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:13.1691 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter by level:
-2021-03-04 22:45:13.1924 Debug Trace =>
-2021-03-04 22:45:13.1963 Debug Debug => ElasticSearch console
-2021-03-04 22:45:13.2039 Debug Info => ElasticSearch console
-2021-03-04 22:45:13.2101 Debug Warn => ElasticSearch console
-2021-03-04 22:45:13.2154 Debug Error => ElasticSearch console
-2021-03-04 22:45:13.2353 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:13.2406 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter by level:
-2021-03-04 22:45:13.2446 Debug Trace =>
-2021-03-04 22:45:13.2489 Debug Debug => ElasticSearch console
-2021-03-04 22:45:13.2542 Debug Info => ElasticSearch console
-2021-03-04 22:45:13.2588 Debug Warn => ElasticSearch console
-2021-03-04 22:45:13.2644 Debug Error => ElasticSearch console
-2021-03-04 22:45:13.2849 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:13.3236 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder by level:
-2021-03-04 22:45:13.3388 Debug Trace =>
-2021-03-04 22:45:13.3435 Debug Debug => ElasticSearch console
-2021-03-04 22:45:13.3486 Debug Info => ElasticSearch console
-2021-03-04 22:45:13.3534 Debug Warn => ElasticSearch console
-2021-03-04 22:45:13.3579 Debug Error => ElasticSearch console
-2021-03-04 22:45:13.3629 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:13.3724 Debug Targets for ValidaSenha.Api.Controllers.ValidaComplexidadeSenhaController by level:
-2021-03-04 22:45:13.3891 Debug Trace =>
-2021-03-04 22:45:13.3940 Debug Debug => ElasticSearch console
-2021-03-04 22:45:13.3983 Debug Info => ElasticSearch console
-2021-03-04 22:45:13.4027 Debug Warn => ElasticSearch console
-2021-03-04 22:45:13.4079 Debug Error => ElasticSearch console
-2021-03-04 22:45:13.4129 Debug Fatal => ElasticSearch console
-2021-03-04 22:45:18.5626 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
- ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
- ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
- ---> System.Net.Http.HttpRequestException: Connection refused
- ---> System.Net.Sockets.SocketException (61): Connection refused
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   --- End of inner exception stack trace ---
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
-   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
-   at Elasticsearch.Net.HttpConnection.Request[TResponse](RequestData requestData)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
-   at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
-   --- End of inner exception stack trace ---
-2021-03-04 22:45:50.4297 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
- ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
- ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
- ---> System.Net.Http.HttpRequestException: Connection refused
- ---> System.Net.Sockets.SocketException (61): Connection refused
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   --- End of inner exception stack trace ---
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
-   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
-   at Elasticsearch.Net.HttpConnection.Request[TResponse](RequestData requestData)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
-   at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
-   --- End of inner exception stack trace ---
-2021-03-04 22:46:33.6216 Trace LogFactory.Flush(00:00:15)
-2021-03-04 22:46:33.6393 Trace Flushing all targets...
-2021-03-04 22:46:33.6450 Trace ForEachItemInParallel() 2 items
-2021-03-04 22:46:33.6494 Trace BufferingWrapper(Name=ElasticSearch): Writing 1 events (Flush Async)
-2021-03-04 22:46:33.6494 Trace Continuation invoked: 
-2021-03-04 22:46:33.6578 Trace Parallel task completed. 1 items remaining
-2021-03-04 22:46:33.9130 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
- ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
- ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
- ---> System.Net.Http.HttpRequestException: Connection refused
- ---> System.Net.Sockets.SocketException (61): Connection refused
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   --- End of inner exception stack trace ---
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
-   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
-   at Elasticsearch.Net.HttpConnection.Request[TResponse](RequestData requestData)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
-   at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
-   --- End of inner exception stack trace ---
-2021-03-04 22:46:33.9174 Trace Continuation invoked: 
-2021-03-04 22:46:33.9394 Trace Parallel task completed. 0 items remaining
-2021-03-04 22:46:33.9490 Info Shutdown() called. Logger closing...
-2021-03-04 22:46:33.9552 Info Closing old configuration.
-2021-03-04 22:46:33.9613 Trace LogFactory.Flush(00:00:15)
-2021-03-04 22:46:33.9671 Trace Flushing all targets...
-2021-03-04 22:46:33.9891 Trace ForEachItemInParallel() 2 items
-2021-03-04 22:46:33.9972 Trace Continuation invoked: 
-2021-03-04 22:46:34.0044 Trace Parallel task completed. 1 items remaining
-2021-03-04 22:46:33.9973 Trace Continuation invoked: 
-2021-03-04 22:46:34.0325 Trace Parallel task completed. 0 items remaining
-2021-03-04 22:46:34.0433 Debug Closing logging configuration...
-2021-03-04 22:46:34.0507 Trace Closing BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 22:46:34.0582 Debug Closing target 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'.
-2021-03-04 22:46:34.0663 Debug Closed target 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'.
-2021-03-04 22:46:34.0900 Trace Closing ElasticSearch Target[ElasticSearch]
-2021-03-04 22:46:34.0985 Debug Closing target 'ElasticSearch Target[ElasticSearch]'.
-2021-03-04 22:46:34.1058 Debug Closed target 'ElasticSearch Target[ElasticSearch]'.
-2021-03-04 22:46:34.1127 Trace Closing 'logstash-${date:format=yyyy.MM.dd}'
-2021-03-04 22:46:34.1351 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.1434 Trace Closing Layout Renderer: ${date}
-2021-03-04 22:46:34.1514 Trace Closing 'logevent'
-2021-03-04 22:46:34.1587 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.1665 Trace Closing '${longdate}|${level:uppercase=true}|${logger}|${message}'
-2021-03-04 22:46:34.1891 Trace Closing Layout Renderer: ${longdate}
-2021-03-04 22:46:34.1964 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.2041 Trace Closing Layout Renderer: ${uppercase}
-2021-03-04 22:46:34.2118 Trace Closing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 22:46:34.2336 Trace Closing Layout Renderer: ${level}
-2021-03-04 22:46:34.2420 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.2502 Trace Closing Layout Renderer: ${logger}
-2021-03-04 22:46:34.2579 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.2650 Trace Closing Layout Renderer: ${message}
-2021-03-04 22:46:34.2878 Trace Closing Console Target[console]
-2021-03-04 22:46:34.2963 Debug Closing target 'Console Target[console]'.
-2021-03-04 22:46:34.3042 Debug Closed target 'Console Target[console]'.
-2021-03-04 22:46:34.3117 Trace Closing '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 22:46:34.3327 Trace Closing Layout Renderer: ${date}
-2021-03-04 22:46:34.3417 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.3503 Trace Closing Layout Renderer: ${uppercase}
-2021-03-04 22:46:34.3581 Trace Closing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 22:46:34.3657 Trace Closing Layout Renderer: ${level}
-2021-03-04 22:46:34.3888 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.3963 Trace Closing Layout Renderer: ${message}
-2021-03-04 22:46:34.4034 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.4116 Trace Closing Layout Renderer: ${exception}
-2021-03-04 22:46:34.4162 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.4367 Trace Closing Layout Renderer: ${logger}
-2021-03-04 22:46:34.4441 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:46:34.4508 Trace Closing Layout Renderer: ${all-event-properties}
-2021-03-04 22:46:34.4574 Debug Finished closing logging configuration.
-2021-03-04 22:46:34.4646 Debug Stopping file watching for path '/Users/albardo/hiring/itilab-master/src/ValidaSenha.Api/bin/Debug/netcoreapp3.1' filter 'nlog.config'
-2021-03-04 22:46:34.4872 Debug Targets not configured for logger: ValidaSenha.Api.Program
-2021-03-04 22:46:34.4942 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
-2021-03-04 22:46:34.5010 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
-2021-03-04 22:46:34.5072 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
-2021-03-04 22:46:34.5138 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
-2021-03-04 22:46:34.5351 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
-2021-03-04 22:46:34.5427 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
-2021-03-04 22:46:34.5500 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.MvcOptions
-2021-03-04 22:46:34.5571 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
-2021-03-04 22:46:34.5647 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter
-2021-03-04 22:46:34.5864 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter
-2021-03-04 22:46:34.5938 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
-2021-03-04 22:46:34.6002 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
-2021-03-04 22:46:34.6059 Debug Targets not configured for logger: Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware
-2021-03-04 22:46:34.6121 Debug Targets not configured for logger: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
-2021-03-04 22:46:34.6328 Debug Targets not configured for logger: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
-2021-03-04 22:46:34.6408 Debug Targets not configured for logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
-2021-03-04 22:46:34.6481 Debug Targets not configured for logger: Microsoft.AspNetCore.Cors.Infrastructure.CorsService
-2021-03-04 22:46:34.6557 Debug Targets not configured for logger: Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware
-2021-03-04 22:46:34.6607 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
-2021-03-04 22:46:34.6656 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
-2021-03-04 22:46:34.6868 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
-2021-03-04 22:46:34.6932 Debug Targets not configured for logger: ValidaSenha.Api.Infraestructure.MetricReporter
-2021-03-04 22:46:34.6982 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
-2021-03-04 22:46:34.7073 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
-2021-03-04 22:46:34.7147 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
-2021-03-04 22:46:34.7320 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter
-2021-03-04 22:46:34.7392 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter
-2021-03-04 22:46:34.7461 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder
-2021-03-04 22:46:34.7528 Debug Targets not configured for logger: ValidaSenha.Api.Controllers.ValidaComplexidadeSenhaController
-2021-03-04 22:46:34.7593 Info Logger has been closed down.
-2021-03-04 22:46:34.7664 Info AppDomain Shutting down. Logger closing...
-2021-03-04 22:46:34.7905 Info Logger has been shut down.
-2021-03-04 22:58:02.0580 Info Message Template Auto Format enabled
-2021-03-04 22:58:02.1841 Info Loading assembly: NLog.Targets.ElasticSearch
-2021-03-04 22:58:02.1907 Debug ScanAssembly('NLog.Targets.ElasticSearch, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3eb62cd298662c6a')
-2021-03-04 22:58:02.1964 Info Loading assembly: NLog.Web.AspNetCore
-2021-03-04 22:58:02.2024 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 22:58:02.2172 Debug Setting 'BufferingTargetWrapper.name' to 'ElasticSearch'
-2021-03-04 22:58:02.2456 Debug Setting 'BufferingTargetWrapper.flushTimeout' to '5000'
-2021-03-04 22:58:02.2645 Debug Setting 'DateLayoutRenderer.format' to 'yyyy.MM.dd'
-2021-03-04 22:58:02.2719 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.2790 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:58:02.2853 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.2911 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 22:58:02.2974 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 22:58:02.3030 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 22:58:02.3156 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.3223 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:02.3292 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.3357 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:58:02.3468 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:58:02.3521 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:02.3575 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:02.3720 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:02.3791 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.3852 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:58:02.3914 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.3979 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:58:02.4038 Debug Registered target ElasticSearch: NLog.Targets.ElasticSearch.ElasticSearchTarget
-2021-03-04 22:58:02.4180 Info Adding target BufferingTargetWrapper(Name=ElasticSearch)
-2021-03-04 22:58:02.4247 Debug Registered target ElasticSearch: NLog.Targets.Wrappers.BufferingTargetWrapper
-2021-03-04 22:58:02.4328 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.4379 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 22:58:02.4434 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 22:58:02.4474 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 22:58:02.4513 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.4546 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:02.4579 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.4684 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:58:02.4718 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:58:02.4751 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:02.4785 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:02.4816 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:02.4848 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.4891 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:58:02.4924 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.4958 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:58:02.4993 Debug Setting 'ConsoleTarget.name' to 'console'
-2021-03-04 22:58:02.5030 Debug Setting 'ConsoleTarget.layout' to '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 22:58:02.5080 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.5222 Trace Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:58:02.5293 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
-2021-03-04 22:58:02.5357 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
-2021-03-04 22:58:02.5418 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.5473 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:02.5516 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.5567 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:58:02.5706 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:58:02.5775 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:02.5855 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:02.5918 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:02.5961 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.6020 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:58:02.6177 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.6235 Trace Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 22:58:02.6269 Trace  Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 22:58:02.6333 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.6376 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:58:02.6432 Trace FindReachableObject<NLog.Internal.IRenderable>:
-2021-03-04 22:58:02.6472 Trace Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 22:58:02.6517 Trace  Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 22:58:02.6555 Info Adding target ConsoleTarget(Name=console)
-2021-03-04 22:58:02.6673 Debug Registered target console: NLog.Targets.ConsoleTarget
-2021-03-04 22:58:02.6736 Trace ParseRulesElement
-2021-03-04 22:58:02.6863 Debug Unused target checking is started... Rule Count: 1, Target Count: 2
-2021-03-04 22:58:02.6957 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 2, Unused Target Count: 0
-2021-03-04 22:58:02.7486 Debug Watching path '/Users/albardo/hiring/itilab-master/src/ValidaSenha.Api/bin/Debug/netcoreapp3.1' filter 'nlog.config' for changes.
-2021-03-04 22:58:02.7536 Debug --- NLog configuration dump ---
-2021-03-04 22:58:02.7577 Debug Targets:
-2021-03-04 22:58:02.7706 Debug BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 22:58:02.7760 Debug Console Target[console]
-2021-03-04 22:58:02.7814 Debug Rules:
-2021-03-04 22:58:02.7872 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ElasticSearch console ]
-2021-03-04 22:58:02.7922 Debug --- End of NLog configuration dump ---
-2021-03-04 22:58:02.7992 Trace FindReachableObject<System.Object>:
-2021-03-04 22:58:02.8041 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ ElasticSearch console ]'
-2021-03-04 22:58:02.8078 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
-2021-03-04 22:58:02.8218 Trace  Scanning BufferingTargetWrapper 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'
-2021-03-04 22:58:02.8287 Trace   Scanning Property WrappedTarget 'ElasticSearch Target[ElasticSearch]' NLog.Targets
-2021-03-04 22:58:02.8350 Trace   Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 22:58:02.8421 Trace    Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 22:58:02.8486 Trace    Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 22:58:02.8544 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:02.8681 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:02.8746 Trace     Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:58:02.8813 Trace    Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 22:58:02.8882 Trace    Scanning SimpleLayout ''logevent''
-2021-03-04 22:58:02.8941 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:02.8983 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:02.9032 Trace    Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 22:58:02.9125 Trace    Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 22:58:02.9189 Trace    Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 22:58:02.9218 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:02.9266 Trace     Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 22:58:02.9320 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:02.9376 Trace     Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:58:02.9422 Trace      Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:58:02.9478 Trace      Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:02.9530 Trace       Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:02.9579 Trace       Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:02.9715 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:02.9761 Trace     Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:58:02.9804 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:02.9852 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:58:02.9906 Trace  Scanning ConsoleTarget 'Console Target[console]'
-2021-03-04 22:58:02.9945 Trace   Scanning Property Layout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'' NLog.Layouts
-2021-03-04 22:58:02.9980 Trace   Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 22:58:03.0022 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.0076 Trace    Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:58:03.0213 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.0275 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:58:03.0339 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:58:03.0402 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:03.0469 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.0529 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:03.0662 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.0726 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:58:03.0792 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.0862 Trace    Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 22:58:03.0930 Trace     Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 22:58:03.0989 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.1046 Trace    Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:58:03.1180 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.1239 Trace    Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 22:58:03.1299 Trace     Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 22:58:03.1396 Trace   Scanning Property Encoding 'System.Text.ConsoleEncoding' System.Text
-2021-03-04 22:58:03.1461 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
-2021-03-04 22:58:03.1512 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
-2021-03-04 22:58:03.1572 Info Found 33 configuration items
-2021-03-04 22:58:03.1733 Trace Initializing Layout Renderer: ${all-event-properties}
-2021-03-04 22:58:03.1809 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.1877 Trace Initializing Layout Renderer: ${logger}
-2021-03-04 22:58:03.1950 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.2017 Trace Initializing Layout Renderer: ${exception}
-2021-03-04 22:58:03.2080 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.2220 Trace Initializing Layout Renderer: ${message}
-2021-03-04 22:58:03.2286 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.2349 Trace Initializing Layout Renderer: ${level}
-2021-03-04 22:58:03.2414 Trace Initializing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 22:58:03.2506 Trace FindReachableObject<System.Object>:
-2021-03-04 22:58:03.2559 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:03.2696 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.2770 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:03.2862 Trace Initializing Layout Renderer: ${uppercase}
-2021-03-04 22:58:03.2919 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.2975 Trace Initializing Layout Renderer: ${date}
-2021-03-04 22:58:03.3022 Trace Initializing '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 22:58:03.3074 Trace FindReachableObject<System.Object>:
-2021-03-04 22:58:03.3215 Trace Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 22:58:03.3281 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.3349 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:58:03.3412 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.3488 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:58:03.3535 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:58:03.3580 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:03.3722 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.3791 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:03.3853 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.3918 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:58:03.3986 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.4048 Trace  Scanning ExceptionLayoutRenderer 'Layout Renderer: ${exception}'
-2021-03-04 22:58:03.4198 Trace   Scanning Property Formats 'System.Collections.Generic.List`1[NLog.Config.ExceptionRenderingFormat]' System.Collections.Generic
-2021-03-04 22:58:03.4265 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.4331 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:58:03.4392 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.4465 Trace  Scanning AllEventPropertiesLayoutRenderer 'Layout Renderer: ${all-event-properties}'
-2021-03-04 22:58:03.4543 Trace   Scanning Property Exclude 'System.Collections.Generic.HashSet`1[System.String]' System.Collections.Generic
-2021-03-04 22:58:03.4680 Trace Initializing Console Target[console]
-2021-03-04 22:58:03.4729 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 22:58:03.4768 Trace Scanning ConsoleTarget 'Console Target[console]'
-2021-03-04 22:58:03.4817 Trace  Scanning Property Layout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'' NLog.Layouts
-2021-03-04 22:58:03.4864 Trace  Scanning SimpleLayout ''${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}''
-2021-03-04 22:58:03.4911 Trace  Scanning Property Encoding 'System.Text.ConsoleEncoding' System.Text
-2021-03-04 22:58:03.4970 Trace Console Target[console] has 1 layouts
-2021-03-04 22:58:03.5016 Trace Initializing Layout Renderer: ${message}
-2021-03-04 22:58:03.5056 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.5198 Trace Initializing Layout Renderer: ${logger}
-2021-03-04 22:58:03.5263 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.5326 Trace Initializing Layout Renderer: ${level}
-2021-03-04 22:58:03.5385 Trace Initializing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 22:58:03.5449 Trace FindReachableObject<System.Object>:
-2021-03-04 22:58:03.5504 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:03.5558 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.5707 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:03.5772 Trace Initializing Layout Renderer: ${uppercase}
-2021-03-04 22:58:03.5838 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.5906 Trace Initializing Layout Renderer: ${longdate}
-2021-03-04 22:58:03.5979 Trace Initializing '${longdate}|${level:uppercase=true}|${logger}|${message}'
-2021-03-04 22:58:03.6025 Trace FindReachableObject<System.Object>:
-2021-03-04 22:58:03.6069 Trace Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 22:58:03.6215 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.6277 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
-2021-03-04 22:58:03.6338 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.6395 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
-2021-03-04 22:58:03.6467 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
-2021-03-04 22:58:03.6526 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
-2021-03-04 22:58:03.6579 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.6739 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
-2021-03-04 22:58:03.6796 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.6857 Trace  Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
-2021-03-04 22:58:03.6918 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.6983 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
-2021-03-04 22:58:03.7021 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.7170 Trace Initializing 'logevent'
-2021-03-04 22:58:03.7239 Trace FindReachableObject<System.Object>:
-2021-03-04 22:58:03.7303 Trace Scanning SimpleLayout ''logevent''
-2021-03-04 22:58:03.7359 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.7422 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.7492 Trace Initializing Layout Renderer: ${date}
-2021-03-04 22:58:03.7548 Trace Initializing Layout Renderer: ${literal}
-2021-03-04 22:58:03.7698 Trace Initializing 'logstash-${date:format=yyyy.MM.dd}'
-2021-03-04 22:58:03.7766 Trace FindReachableObject<System.Object>:
-2021-03-04 22:58:03.7831 Trace Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 22:58:03.7896 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.7974 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.8035 Trace  Scanning DateLayoutRenderer 'Layout Renderer: ${date}'
-2021-03-04 22:58:03.8185 Trace Initializing ElasticSearch Target[ElasticSearch]
-2021-03-04 22:58:03.8276 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 22:58:03.8334 Trace Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 22:58:03.8383 Trace  Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 22:58:03.8434 Trace  Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 22:58:03.8482 Trace  Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 22:58:03.8539 Trace  Scanning SimpleLayout ''logevent''
-2021-03-04 22:58:03.8681 Trace  Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 22:58:03.8749 Trace  Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 22:58:03.8815 Trace  Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 22:58:03.8877 Trace ElasticSearch Target[ElasticSearch] has 3 layouts
-2021-03-04 22:58:03.8966 Trace FindReachableObject<System.Object>:
-2021-03-04 22:58:03.9029 Trace Scanning SimpleLayout ''http://localhost:9200''
-2021-03-04 22:58:03.9175 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
-2021-03-04 22:58:03.9239 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
-2021-03-04 22:58:03.9752 Trace Initializing BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 22:58:03.9818 Trace FindReachableObject<NLog.Layouts.Layout>:
-2021-03-04 22:58:03.9879 Trace Scanning BufferingTargetWrapper 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'
-2021-03-04 22:58:03.9935 Trace  Scanning Property WrappedTarget 'ElasticSearch Target[ElasticSearch]' NLog.Targets
-2021-03-04 22:58:03.9989 Trace  Scanning ElasticSearchTarget 'ElasticSearch Target[ElasticSearch]'
-2021-03-04 22:58:04.0046 Trace   Scanning Property Index ''logstash-${date:format=yyyy.MM.dd}'' NLog.Layouts
-2021-03-04 22:58:04.0194 Trace   Scanning SimpleLayout ''logstash-${date:format=yyyy.MM.dd}''
-2021-03-04 22:58:04.0258 Trace   Scanning Property DocumentType ''logevent'' NLog.Layouts
-2021-03-04 22:58:04.0324 Trace   Scanning SimpleLayout ''logevent''
-2021-03-04 22:58:04.0386 Trace   Scanning Property Fields 'System.Collections.Generic.List`1[NLog.Targets.ElasticSearch.Field]' System.Collections.Generic
-2021-03-04 22:58:04.0457 Trace   Scanning Property Layout ''${longdate}|${level:uppercase=true}|${logger}|${message}'' NLog.Layouts
-2021-03-04 22:58:04.0523 Trace   Scanning SimpleLayout ''${longdate}|${level:uppercase=true}|${logger}|${message}''
-2021-03-04 22:58:04.0671 Trace BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch]) has 3 layouts
-2021-03-04 22:58:04.0739 Trace BufferingWrapper(Name=ElasticSearch): Create Timer
-2021-03-04 22:58:04.0977 Debug Targets for ValidaSenha.Api.Program by level:
-2021-03-04 22:58:04.1028 Debug Trace =>
-2021-03-04 22:58:04.1069 Debug Debug => ElasticSearch console
-2021-03-04 22:58:04.1212 Debug Info => ElasticSearch console
-2021-03-04 22:58:04.1272 Debug Warn => ElasticSearch console
-2021-03-04 22:58:04.1329 Debug Error => ElasticSearch console
-2021-03-04 22:58:04.1392 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:04.6506 Debug ScanAssembly('NLog.Web.AspNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 22:58:04.6936 Debug Hide assemblies for callsite
-2021-03-04 22:58:04.6974 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
-2021-03-04 22:58:04.7101 Debug Targets for Microsoft.Extensions.Hosting.Internal.ApplicationLifetime by level:
-2021-03-04 22:58:04.7231 Debug Trace =>
-2021-03-04 22:58:04.7298 Debug Debug => ElasticSearch console
-2021-03-04 22:58:04.7366 Debug Info => ElasticSearch console
-2021-03-04 22:58:04.7438 Debug Warn => ElasticSearch console
-2021-03-04 22:58:04.7511 Debug Error => ElasticSearch console
-2021-03-04 22:58:04.7546 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:04.7745 Debug Targets for Microsoft.Extensions.Hosting.Internal.Host by level:
-2021-03-04 22:58:04.7810 Debug Trace =>
-2021-03-04 22:58:04.7874 Debug Debug => ElasticSearch console
-2021-03-04 22:58:04.7940 Debug Info => ElasticSearch console
-2021-03-04 22:58:04.8002 Debug Warn => ElasticSearch console
-2021-03-04 22:58:04.8062 Debug Error => ElasticSearch console
-2021-03-04 22:58:04.8220 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:04.8300 Debug Targets for Microsoft.Hosting.Lifetime by level:
-2021-03-04 22:58:04.8366 Debug Trace =>
-2021-03-04 22:58:04.8438 Debug Debug => ElasticSearch console
-2021-03-04 22:58:04.8501 Debug Info => ElasticSearch console
-2021-03-04 22:58:04.8550 Debug Warn => ElasticSearch console
-2021-03-04 22:58:04.8698 Debug Error => ElasticSearch console
-2021-03-04 22:58:04.8768 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:04.9014 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets by level:
-2021-03-04 22:58:04.9065 Debug Trace =>
-2021-03-04 22:58:04.9214 Debug Debug => ElasticSearch console
-2021-03-04 22:58:04.9276 Debug Info => ElasticSearch console
-2021-03-04 22:58:04.9335 Debug Warn => ElasticSearch console
-2021-03-04 22:58:04.9396 Debug Error => ElasticSearch console
-2021-03-04 22:58:04.9450 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:04.9739 Debug Targets for Microsoft.AspNetCore.Server.Kestrel by level:
-2021-03-04 22:58:04.9803 Debug Trace =>
-2021-03-04 22:58:04.9860 Debug Debug => ElasticSearch console
-2021-03-04 22:58:04.9927 Debug Info => ElasticSearch console
-2021-03-04 22:58:04.9991 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.0057 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.0219 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.0352 Debug Targets for Microsoft.AspNetCore.Hosting.Diagnostics by level:
-2021-03-04 22:58:05.0423 Debug Trace =>
-2021-03-04 22:58:05.0490 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.0559 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.0716 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.0782 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.0846 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.1533 Debug Targets for Microsoft.AspNetCore.Mvc.MvcOptions by level:
-2021-03-04 22:58:05.1682 Debug Trace =>
-2021-03-04 22:58:05.1748 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.1818 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.1883 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.1952 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.2019 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.2266 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter by level:
-2021-03-04 22:58:05.2335 Debug Trace =>
-2021-03-04 22:58:05.2401 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.2465 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.2528 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.2681 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.2765 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.3060 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter by level:
-2021-03-04 22:58:05.3204 Debug Trace =>
-2021-03-04 22:58:05.3263 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.3320 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.3382 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.3442 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.3490 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.3538 Debug Targets for Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter by level:
-2021-03-04 22:58:05.3699 Debug Trace =>
-2021-03-04 22:58:05.3770 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.3834 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.3901 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.3966 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.4028 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.4788 Debug Targets for Microsoft.AspNetCore.Routing.EndpointMiddleware by level:
-2021-03-04 22:58:05.4844 Debug Trace =>
-2021-03-04 22:58:05.4902 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.4969 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.5031 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.5196 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.5268 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.5604 Debug Targets for Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware by level:
-2021-03-04 22:58:05.5730 Debug Trace =>
-2021-03-04 22:58:05.5787 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.5845 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.5897 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.5954 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.6003 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.6226 Debug Targets for Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware by level:
-2021-03-04 22:58:05.6282 Debug Trace =>
-2021-03-04 22:58:05.6342 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.6393 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.6440 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.6488 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.6540 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.6838 Debug Targets for Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware by level:
-2021-03-04 22:58:05.6902 Debug Trace =>
-2021-03-04 22:58:05.6959 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.7010 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.7064 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.7225 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.7296 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.7450 Debug Targets for Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware by level:
-2021-03-04 22:58:05.7503 Debug Trace =>
-2021-03-04 22:58:05.7557 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.7714 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.7777 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.7840 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.7902 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.8020 Debug Targets for Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware by level:
-2021-03-04 22:58:05.8176 Debug Trace =>
-2021-03-04 22:58:05.8253 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.8294 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.8353 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.8414 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.8478 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.8616 Debug Targets for Microsoft.AspNetCore.Cors.Infrastructure.CorsService by level:
-2021-03-04 22:58:05.8748 Debug Trace =>
-2021-03-04 22:58:05.8815 Debug Debug => ElasticSearch console
-2021-03-04 22:58:05.8887 Debug Info => ElasticSearch console
-2021-03-04 22:58:05.8957 Debug Warn => ElasticSearch console
-2021-03-04 22:58:05.9025 Debug Error => ElasticSearch console
-2021-03-04 22:58:05.9180 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:05.9721 Debug Targets for Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware by level:
-2021-03-04 22:58:06.0180 Debug Trace =>
-2021-03-04 22:58:06.0250 Debug Debug => ElasticSearch console
-2021-03-04 22:58:06.0293 Debug Info => ElasticSearch console
-2021-03-04 22:58:06.0332 Debug Warn => ElasticSearch console
-2021-03-04 22:58:06.0369 Debug Error => ElasticSearch console
-2021-03-04 22:58:06.0405 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:06.0453 Debug Targets for Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware by level:
-2021-03-04 22:58:06.0518 Debug Trace =>
-2021-03-04 22:58:06.0557 Debug Debug => ElasticSearch console
-2021-03-04 22:58:06.0697 Debug Info => ElasticSearch console
-2021-03-04 22:58:06.0745 Debug Warn => ElasticSearch console
-2021-03-04 22:58:06.0784 Debug Error => ElasticSearch console
-2021-03-04 22:58:06.0831 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:06.0900 Debug Targets for Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer by level:
-2021-03-04 22:58:06.0951 Debug Trace =>
-2021-03-04 22:58:06.1002 Debug Debug => ElasticSearch console
-2021-03-04 22:58:06.1051 Debug Info => ElasticSearch console
-2021-03-04 22:58:06.1185 Debug Warn => ElasticSearch console
-2021-03-04 22:58:06.1223 Debug Error => ElasticSearch console
-2021-03-04 22:58:06.1266 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.3060 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
- ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
- ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
- ---> System.Net.Http.HttpRequestException: Connection refused
- ---> System.Net.Sockets.SocketException (61): Connection refused
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   --- End of inner exception stack trace ---
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
-   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
-   at Elasticsearch.Net.HttpConnection.Request[TResponse](RequestData requestData)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
-   at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
-   --- End of inner exception stack trace ---
-2021-03-04 22:58:11.5674 Debug Targets for Microsoft.AspNetCore.Routing.Matching.DfaMatcher by level:
-2021-03-04 22:58:11.5736 Debug Trace =>
-2021-03-04 22:58:11.5785 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.5841 Debug Info => ElasticSearch console
-2021-03-04 22:58:11.5883 Debug Warn => ElasticSearch console
-2021-03-04 22:58:11.5925 Debug Error => ElasticSearch console
-2021-03-04 22:58:11.5961 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.6026 Debug Targets for ValidaSenha.Api.Infraestructure.MetricReporter by level:
-2021-03-04 22:58:11.6067 Debug Trace =>
-2021-03-04 22:58:11.6213 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.6253 Debug Info => ElasticSearch console
-2021-03-04 22:58:11.6291 Debug Warn => ElasticSearch console
-2021-03-04 22:58:11.6327 Debug Error => ElasticSearch console
-2021-03-04 22:58:11.6368 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.6668 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory by level:
-2021-03-04 22:58:11.6728 Debug Trace =>
-2021-03-04 22:58:11.6772 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.6818 Debug Info => ElasticSearch console
-2021-03-04 22:58:11.6860 Debug Warn => ElasticSearch console
-2021-03-04 22:58:11.6903 Debug Error => ElasticSearch console
-2021-03-04 22:58:11.6953 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.7037 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder by level:
-2021-03-04 22:58:11.7198 Debug Trace =>
-2021-03-04 22:58:11.7244 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.7300 Debug Info => ElasticSearch console
-2021-03-04 22:58:11.7354 Debug Warn => ElasticSearch console
-2021-03-04 22:58:11.7402 Debug Error => ElasticSearch console
-2021-03-04 22:58:11.7441 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.7488 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker by level:
-2021-03-04 22:58:11.7529 Debug Trace =>
-2021-03-04 22:58:11.7569 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.7730 Debug Info => ElasticSearch console
-2021-03-04 22:58:11.7782 Debug Warn => ElasticSearch console
-2021-03-04 22:58:11.7832 Debug Error => ElasticSearch console
-2021-03-04 22:58:11.7886 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.7945 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter by level:
-2021-03-04 22:58:11.7997 Debug Trace =>
-2021-03-04 22:58:11.8044 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.8206 Debug Info => ElasticSearch console
-2021-03-04 22:58:11.8264 Debug Warn => ElasticSearch console
-2021-03-04 22:58:11.8322 Debug Error => ElasticSearch console
-2021-03-04 22:58:11.8387 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.8436 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter by level:
-2021-03-04 22:58:11.8480 Debug Trace =>
-2021-03-04 22:58:11.8544 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.8726 Debug Info => ElasticSearch console
-2021-03-04 22:58:11.8803 Debug Warn => ElasticSearch console
-2021-03-04 22:58:11.8880 Debug Error => ElasticSearch console
-2021-03-04 22:58:11.8949 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.9261 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder by level:
-2021-03-04 22:58:11.9323 Debug Trace =>
-2021-03-04 22:58:11.9391 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.9448 Debug Info => ElasticSearch console
-2021-03-04 22:58:11.9501 Debug Warn => ElasticSearch console
-2021-03-04 22:58:11.9566 Debug Error => ElasticSearch console
-2021-03-04 22:58:11.9728 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:11.9818 Debug Targets for ValidaSenha.Api.Controllers.ValidaComplexidadeSenhaController by level:
-2021-03-04 22:58:11.9891 Debug Trace =>
-2021-03-04 22:58:11.9940 Debug Debug => ElasticSearch console
-2021-03-04 22:58:11.9981 Debug Info => ElasticSearch console
-2021-03-04 22:58:12.0044 Debug Warn => ElasticSearch console
-2021-03-04 22:58:12.0224 Debug Error => ElasticSearch console
-2021-03-04 22:58:12.0292 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:12.1768 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector by level:
-2021-03-04 22:58:12.1815 Debug Trace =>
-2021-03-04 22:58:12.1858 Debug Debug => ElasticSearch console
-2021-03-04 22:58:12.1892 Debug Info => ElasticSearch console
-2021-03-04 22:58:12.1941 Debug Warn => ElasticSearch console
-2021-03-04 22:58:12.1978 Debug Error => ElasticSearch console
-2021-03-04 22:58:12.2013 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:12.2057 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor by level:
-2021-03-04 22:58:12.2212 Debug Trace =>
-2021-03-04 22:58:12.2253 Debug Debug => ElasticSearch console
-2021-03-04 22:58:12.2293 Debug Info => ElasticSearch console
-2021-03-04 22:58:12.2342 Debug Warn => ElasticSearch console
-2021-03-04 22:58:12.2385 Debug Error => ElasticSearch console
-2021-03-04 22:58:12.2431 Debug Fatal => ElasticSearch console
-2021-03-04 22:58:16.5423 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
- ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
- ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
- ---> System.Net.Http.HttpRequestException: Connection refused
- ---> System.Net.Sockets.SocketException (61): Connection refused
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   --- End of inner exception stack trace ---
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
-   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
-   at Elasticsearch.Net.HttpConnection.Request[TResponse](RequestData requestData)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
-   at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
-   --- End of inner exception stack trace ---
-2021-03-04 22:58:18.2120 Trace LogFactory.Flush(00:00:15)
-2021-03-04 22:58:18.2266 Trace Flushing all targets...
-2021-03-04 22:58:18.2352 Trace ForEachItemInParallel() 2 items
-2021-03-04 22:58:18.2418 Trace BufferingWrapper(Name=ElasticSearch): Writing 1 events (Flush Async)
-2021-03-04 22:58:18.2418 Trace Continuation invoked: 
-2021-03-04 22:58:18.2515 Trace Parallel task completed. 1 items remaining
-2021-03-04 22:58:18.2592 Error ElasticSearch: Failed to send log messages. status= Exception: Elasticsearch.Net.ElasticsearchClientException: Failed to ping the specified node.. Call: Status code unknown from: HEAD /
- ---> Elasticsearch.Net.PipelineException: Failed to ping the specified node.
- ---> Elasticsearch.Net.PipelineException: An error occurred trying to write the request data to the specified node.
- ---> System.Net.Http.HttpRequestException: Connection refused
- ---> System.Net.Sockets.SocketException (61): Connection refused
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   --- End of inner exception stack trace ---
-   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
-   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
-   at Elasticsearch.Net.HttpConnection.Request[TResponse](RequestData requestData)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   --- End of inner exception stack trace ---
-   at Elasticsearch.Net.RequestPipeline.Ping(Node node)
-   at Elasticsearch.Net.Transport`1.Ping(IRequestPipeline pipeline, Node node)
-   at Elasticsearch.Net.Transport`1.Request[TResponse](HttpMethod method, String path, PostData data, IRequestParameters requestParameters)
-   --- End of inner exception stack trace ---
-2021-03-04 22:58:18.2755 Trace Continuation invoked: 
-2021-03-04 22:58:18.2816 Trace Parallel task completed. 0 items remaining
-2021-03-04 22:58:18.2896 Info Shutdown() called. Logger closing...
-2021-03-04 22:58:18.2959 Info Closing old configuration.
-2021-03-04 22:58:18.3021 Trace LogFactory.Flush(00:00:15)
-2021-03-04 22:58:18.3081 Trace Flushing all targets...
-2021-03-04 22:58:18.3272 Trace ForEachItemInParallel() 2 items
-2021-03-04 22:58:18.3343 Trace Continuation invoked: 
-2021-03-04 22:58:18.3343 Trace Continuation invoked: 
-2021-03-04 22:58:18.3464 Trace Parallel task completed. 0 items remaining
-2021-03-04 22:58:18.3409 Trace Parallel task completed. 1 items remaining
-2021-03-04 22:58:18.3539 Debug Closing logging configuration...
-2021-03-04 22:58:18.3774 Trace Closing BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])
-2021-03-04 22:58:18.3856 Debug Closing target 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'.
-2021-03-04 22:58:18.3943 Debug Closed target 'BufferingWrapper Target[ElasticSearch](ElasticSearch Target[ElasticSearch])'.
-2021-03-04 22:58:18.4010 Trace Closing ElasticSearch Target[ElasticSearch]
-2021-03-04 22:58:18.4233 Debug Closing target 'ElasticSearch Target[ElasticSearch]'.
-2021-03-04 22:58:18.4304 Debug Closed target 'ElasticSearch Target[ElasticSearch]'.
-2021-03-04 22:58:18.4379 Trace Closing 'logstash-${date:format=yyyy.MM.dd}'
-2021-03-04 22:58:18.4444 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.4499 Trace Closing Layout Renderer: ${date}
-2021-03-04 22:58:18.4543 Trace Closing 'logevent'
-2021-03-04 22:58:18.4721 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.4799 Trace Closing '${longdate}|${level:uppercase=true}|${logger}|${message}'
-2021-03-04 22:58:18.4874 Trace Closing Layout Renderer: ${longdate}
-2021-03-04 22:58:18.4956 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.5024 Trace Closing Layout Renderer: ${uppercase}
-2021-03-04 22:58:18.5202 Trace Closing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 22:58:18.5287 Trace Closing Layout Renderer: ${level}
-2021-03-04 22:58:18.5359 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.5434 Trace Closing Layout Renderer: ${logger}
-2021-03-04 22:58:18.5511 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.5584 Trace Closing Layout Renderer: ${message}
-2021-03-04 22:58:18.5775 Trace Closing Console Target[console]
-2021-03-04 22:58:18.5848 Debug Closing target 'Console Target[console]'.
-2021-03-04 22:58:18.5929 Debug Closed target 'Console Target[console]'.
-2021-03-04 22:58:18.6002 Trace Closing '${date}|${level:uppercase=true}|${message}|${exception}|${logger}|${all-event-properties}'
-2021-03-04 22:58:18.6072 Trace Closing Layout Renderer: ${date}
-2021-03-04 22:58:18.6273 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.6359 Trace Closing Layout Renderer: ${uppercase}
-2021-03-04 22:58:18.6431 Trace Closing SimpleLayout=Layout Renderer: ${level}
-2021-03-04 22:58:18.6504 Trace Closing Layout Renderer: ${level}
-2021-03-04 22:58:18.6574 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.6769 Trace Closing Layout Renderer: ${message}
-2021-03-04 22:58:18.6851 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.6934 Trace Closing Layout Renderer: ${exception}
-2021-03-04 22:58:18.6993 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.7057 Trace Closing Layout Renderer: ${logger}
-2021-03-04 22:58:18.7235 Trace Closing Layout Renderer: ${literal}
-2021-03-04 22:58:18.7296 Trace Closing Layout Renderer: ${all-event-properties}
-2021-03-04 22:58:18.7354 Debug Finished closing logging configuration.
-2021-03-04 22:58:18.7417 Debug Stopping file watching for path '/Users/albardo/hiring/itilab-master/src/ValidaSenha.Api/bin/Debug/netcoreapp3.1' filter 'nlog.config'
-2021-03-04 22:58:18.7475 Debug Targets not configured for logger: ValidaSenha.Api.Program
-2021-03-04 22:58:18.7520 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.ApplicationLifetime
-2021-03-04 22:58:18.7566 Debug Targets not configured for logger: Microsoft.Extensions.Hosting.Internal.Host
-2021-03-04 22:58:18.7748 Debug Targets not configured for logger: Microsoft.Hosting.Lifetime
-2021-03-04 22:58:18.7816 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
-2021-03-04 22:58:18.7882 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel
-2021-03-04 22:58:18.7957 Debug Targets not configured for logger: Microsoft.AspNetCore.Hosting.Diagnostics
-2021-03-04 22:58:18.8022 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.MvcOptions
-2021-03-04 22:58:18.8205 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter
-2021-03-04 22:58:18.8285 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter
-2021-03-04 22:58:18.8358 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter
-2021-03-04 22:58:18.8426 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointMiddleware
-2021-03-04 22:58:18.8502 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
-2021-03-04 22:58:18.8567 Debug Targets not configured for logger: Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware
-2021-03-04 22:58:18.8760 Debug Targets not configured for logger: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
-2021-03-04 22:58:18.8839 Debug Targets not configured for logger: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware
-2021-03-04 22:58:18.8915 Debug Targets not configured for logger: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
-2021-03-04 22:58:18.8987 Debug Targets not configured for logger: Microsoft.AspNetCore.Cors.Infrastructure.CorsService
-2021-03-04 22:58:18.9055 Debug Targets not configured for logger: Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware
-2021-03-04 22:58:18.9235 Debug Targets not configured for logger: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
-2021-03-04 22:58:18.9300 Debug Targets not configured for logger: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
-2021-03-04 22:58:18.9359 Debug Targets not configured for logger: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
-2021-03-04 22:58:18.9406 Debug Targets not configured for logger: ValidaSenha.Api.Infraestructure.MetricReporter
-2021-03-04 22:58:18.9456 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
-2021-03-04 22:58:18.9500 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder
-2021-03-04 22:58:18.9545 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
-2021-03-04 22:58:18.9715 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter
-2021-03-04 22:58:18.9781 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter
-2021-03-04 22:58:18.9840 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder
-2021-03-04 22:58:18.9891 Debug Targets not configured for logger: ValidaSenha.Api.Controllers.ValidaComplexidadeSenhaController
-2021-03-04 22:58:18.9949 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector
-2021-03-04 22:58:18.9988 Debug Targets not configured for logger: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor
-2021-03-04 22:58:19.0024 Info Logger has been closed down.
-2021-03-04 22:58:19.0074 Info AppDomain Shutting down. Logger closing...
-2021-03-04 22:58:19.0283 Info Logger has been shut down.
+2021-03-05 18:42:04.0330 Debug Targets for Microsoft.AspNetCore.Routing.Matching.DfaMatcher by level:
+2021-03-05 18:42:04.0330 Debug Trace =>
+2021-03-05 18:42:04.0330 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.0337 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.0337 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.0337 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.0337 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.0387 Debug Targets for ValidaSenha.Api.Infraestructure.MetricReporter by level:
+2021-03-05 18:42:04.0387 Debug Trace =>
+2021-03-05 18:42:04.0387 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.0387 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.0387 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.0387 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.0387 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.0657 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory by level:
+2021-03-05 18:42:04.0657 Debug Trace =>
+2021-03-05 18:42:04.0670 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.0670 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.0696 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.0698 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.0698 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.0746 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder by level:
+2021-03-05 18:42:04.0746 Debug Trace =>
+2021-03-05 18:42:04.0746 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.0746 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.0757 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.0757 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.0757 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.0786 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker by level:
+2021-03-05 18:42:04.0788 Debug Trace =>
+2021-03-05 18:42:04.0788 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.0788 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.0788 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.0796 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.0796 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.0831 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter by level:
+2021-03-05 18:42:04.0831 Debug Trace =>
+2021-03-05 18:42:04.0840 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.0840 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.0840 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.0846 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.0846 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.0856 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter by level:
+2021-03-05 18:42:04.0856 Debug Trace =>
+2021-03-05 18:42:04.0856 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.0856 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.0856 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.0856 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.0856 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.1167 Debug Targets for Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder by level:
+2021-03-05 18:42:04.1167 Debug Trace =>
+2021-03-05 18:42:04.1167 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.1167 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.1176 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.1176 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.1176 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.1228 Debug Targets for ValidaSenha.Api.Controllers.ValidaComplexidadeSenhaController by level:
+2021-03-05 18:42:04.1228 Debug Trace =>
+2021-03-05 18:42:04.1228 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.1228 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.1228 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.1228 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.1228 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.2734 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector by level:
+2021-03-05 18:42:04.2737 Debug Trace =>
+2021-03-05 18:42:04.2737 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.2737 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.2737 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.2746 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.2746 Debug Fatal => ElasticSearch console
+2021-03-05 18:42:04.2746 Debug Targets for Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor by level:
+2021-03-05 18:42:04.2757 Debug Trace =>
+2021-03-05 18:42:04.2757 Debug Debug => ElasticSearch console
+2021-03-05 18:42:04.2757 Debug Info => ElasticSearch console
+2021-03-05 18:42:04.2757 Debug Warn => ElasticSearch console
+2021-03-05 18:42:04.2757 Debug Error => ElasticSearch console
+2021-03-05 18:42:04.2757 Debug Fatal => ElasticSearch console
